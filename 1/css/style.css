@@ -1,0 +1,365 @@
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100%;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  color: #000000;
+  margin: 0;
+}
+
+.page-title {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+.advertisement {
+  display: flex;
+  width: 100%;
+}
+
+.advertisement__name {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+.advertisement__features {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+@media (max-width: 771px) {
+  .advertisement__wrapper {
+    background-image: url("../img/mobile/hero-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 771px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 771px) and (min-resolution: 2dppx) {
+  .advertisement__wrapper {
+    background-image: url("../img/mobile/hero-mobile@2x.png");
+  }
+}
+@media (min-width: 772px) {
+  .advertisement__wrapper {
+    background-image: url("../img/tablet/hero-tablet@1x.png");
+  }
+}
+@media (min-width: 772px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 772px) and (min-resolution: 2dppx) {
+  .advertisement__wrapper {
+    background-image: url("../img/tablet/hero-tablet@2x.png");
+  }
+}
+@media (min-width: 1150px) {
+  .advertisement__wrapper {
+    background-image: url("../img/desktop/hero-desktop@1x.png");
+  }
+}
+@media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1150px) and (min-resolution: 2dppx) {
+  .advertisement__wrapper {
+    background-image: url("../img/desktop/hero-desktop@2x.png");
+  }
+}
+.catalog-card__name {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.catalog-card__description {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.catalog-card__description--additional {
+  line-height: 24px;
+}
+
+.catalog-card__price {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.catalog-card__button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.collaboration__contacts {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.collaboration__item {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.collaboration__description {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.collaboration__link {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.container {
+  margin: 0 auto;
+}
+@media (max-width: 771px) {
+  .container {
+    width: 320px;
+  }
+}
+@media (min-width: 772px) {
+  .container {
+    width: 772px;
+  }
+}
+@media (min-width: 1150px) {
+  .container {
+    width: 1150px;
+  }
+}
+
+.copyright__link {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+}
+
+.desk-list__item--delivery {
+  color: #444444;
+}
+
+.features__title {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.features__description {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  color: #000000;
+  justify-content: center;
+}
+
+.main-header__logo {
+  border: none;
+}
+.main-header__logo:hover {
+  opacity: 0.6;
+}
+.main-header__logo:active {
+  opacity: 0.3;
+}
+
+@media (max-width: 771px) {
+  .main-header {
+    position: relative;
+    flex-direction: column;
+  }
+  .main-header__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-header__logo {
+    height: 35px;
+    width: 86px;
+    background-image: url("../img/mobile/logo-mobile.svg");
+  }
+  .main-header__toggle {
+    position: relative;
+    background: url("../img/mobile/menu-open.svg") center no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+  .main-header__toggle--nojs {
+    display: none;
+  }
+  .main-header__toggle--nojs ~ .main-header__toggle {
+    display: none;
+  }
+  .main-header__toggle.active {
+    background: url("../img/mobile/menu-close.svg.svg") center no-repeat;
+  }
+}
+@media (min-width: 772px) {
+  .main-header {
+    height: 89px;
+  }
+  .main-header__wrapper {
+    display: flex;
+  }
+  .main-header__toggle {
+    display: none;
+  }
+  .main-header__logo {
+    height: 46px;
+    width: 113px;
+    background: url("../img/tablet/mishka-logo-tablet.svg") center no-repeat;
+  }
+}
+.promotion__title {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.promotion__goods {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.promotion__slogan {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.promotion__item {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.promotion__attribute {
+  text-transform: capitalize;
+}
+
+.promotion__price {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.promotion__link {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.review__title {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.review__text {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.review__name {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.review__email {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.review__button {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.site-list__item {
+  list-style-type: none;
+}
+
+.site-list__link {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+/*# sourceMappingURL=style.css.map */
