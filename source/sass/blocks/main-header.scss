@@ -1,0 +1,77 @@
+.main-header {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  color: #000000;
+  justify-content: center;
+}
+
+.main-header__logo {
+  border: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-header {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .main-header__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-header__logo {
+    height: 35px;
+    width: 86px;
+    background-image: url("../img/mobile/logo-mobile.svg");
+  }
+
+  .main-header__toggle {
+    position: relative;
+    background: url("../img/mobile/menu-open.svg") center no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+
+  .main-header__toggle--nojs {
+    display: none;
+  }
+
+  .main-header__toggle--nojs ~ .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__toggle.active {
+    background: url("../img/mobile/menu-close.svg.svg") center no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    height: 89px;
+  }
+
+  .main-header__wrapper {
+    display: flex;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__logo {
+    height: 46px;
+    width: 113px;
+    background: url("../img/tablet/mishka-logo-tablet.svg") center no-repeat;
+  }
+}

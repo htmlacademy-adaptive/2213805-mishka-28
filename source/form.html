@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
     <meta charset="utf-8">
     <meta name="viewport"
     content="width=device-width, initial-scale=1">
@@ -19,162 +19,160 @@
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            <a class="main-nav__link" href="#">Вязание на заказ</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Поиск по сайту</a>
+            <a class="main-nav__link" href="#">Поиск по сайту</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Корзина:пока пуста</a>
+            <a class="main-nav__link" href="#">Корзина:пока пуста</a>
           </li>
-        </ul>
-        <ul class="main-nav__add desk-list">
-          <li class="desk-list__item desk-list__item--arrivals">
-            <a class="desk-list__link" href="catalog.html">Новые поступления</a>
+          <li class="site-list__item">
+            <a class="main-nav__link" href="#">Новые поступления</a>
           </li>
-          <li class="desk-list__item desk-list__item--sale">
-            <a class="desk-list__link" href="catalog.html">Распродажа</a>
+          <li class="site-list__item">
+            <a class="main-nav__link" href="#">Распродажа</a>
           </li>
-          <li class="desk-list__item desk-list__item--delivery">
-            <a class="desk-list__link" href="#">Бесплатная доставка по России</a>
+          <li class="site-list__item">
+            <a class="main-nav__link" href="#">Бесплатная доставка по России</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-container">
-      <h1 class="visually-hidden">Милые штуки ручной работы для дома сайт.</h1>
-      <section class="advertisement">
-        <div class="advertisement__wrapper">
-          <div class="advertisement__slogan">
-            <h2 class="advertisement__name">Милые штуки ручной работы для дома</h2>
-          </div>
-          <div class="advertisement__features">
-            Предметы интерьера
-          </div>
-          <div class="advertisement__features">
-            Детские игрушки
-          </div>
-        </div>
-      </section>
-      <section class="promotion">
-        <div class="promotion__wrapper">
-          <h2 class="promotion__title">
-            Вязаные корзинки
-          </h2>
-          <p class="promotion__goods">
-            Товар недели
-          </p>
-          <p class="promotion__slogan">Экологически чистая пряжа,
-            ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-          <div class="promotion__subject">
-            <dl class="promotion__list">
-              <div class="promotion__item">
-                <dt class="promotion__attribute">Цвет:</dt>
-                <dd class="promotion__description">тиффани/серый</dd>
-              </div>
-              <div class="promotion__item">
-                <dt class="promotion__attribute">Диаметр:</dt>
-                <dd class="promotion__description">25 см</dd>
-              </div>
-              <div class="promotion__item">
-                <dt class="promotion__attribute">Высота:</dt>
-                <dd class="promotion__description">15 см</dd>
-              </div>
-            </dl>
-          </div>
-          <div class="promotion__image">
-            <picture>
-              <!-- <source type="image/webp" media="(min-width: 1150px)" srcset=" 1x, 2x">
-              <source type="image/webp" media="(min-width: 772px)" srcset=" 1x, img/images-tablet/can-tablet@2x.webp 2x">
-              <source type="image/webp" srcset=" 1x,  2x"> -->
-              <source media="(min-width: 1150px)" srcset="img/desktop/triple-set-desktop@1x.png 1x, img/desktop/triple-set-desktop@2x.png 2x">
-              <source media="(min-width: 772px)" srcset="img/tablet/triple-set-tablet@1x.png 1x, img/tablet/triple-set-tablet@2x.png 2x">
-              <img class="promotion__product" src="img/mobile/triple-set-mobile@1x.png" srcset="img/mobile/triple-set-mobile@2x.png 2x" width="260" height="315" alt="Еда для кота.">
-            </picture>
-          </div>
-          <div class="promotion__price">Цена: 990 руб.</div>
-          <div class="promotion__order">
-            <a class="promotion__link button button--transparent">
-              Заказать
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="features">
-        <div class="features__slogan">
-          <h2 class="features__title">Коротко о нас:</h2>
-        </div>
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__description">Экологически чистые материалы</h3>
-          </li>
-          <li class="features__item">
-            <h3 class="features__description features__description--scandy">Скандинавский стиль по российской цене</h3>
-          </li>
-          <li class="features__item">
-            <h3 class="features__description features__description--likes">Увеличивает лайки на фотографиях</h3>
-          </li>
-          <li class="features__item">
-            <h3 class="features__description features__description--handmade">Связано вручную с любовью и умилением</h3>
-          </li>
-          <li class="features__item">
-            <h3 class="features__description features__description--support">Поддержка отечественного производителя</h3>
-          </li>
-          <li class="features__item">
-            <h3 class="features__description features__description--package">Поставляется в подарочной упаковке</h3>
-          </li>
-        </ul>
-      </section>
-      <section class="review">
-        <div class="review__slogan">
-          <h2 class="review__title>">Отзывы</h2>
-        </div>
-        <p class="review__text">
-          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-у популярных инстамамочек.
-В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-        </p>
-        <p class="review__name">Анастасия Красильникова</p>
-        <p class="review__email">@misssssiskras</p>
-        <div class="review__arrows">
-          <a class="review__link review__link--back" href="#"></a>
-          <a class="review__link review__link--forward" href="#"></a>
-        </div>
-        <div class="review__write">
-          <a class="review__button button button--transparent" href="#"></a>
-        </div>
-      </section>
-      <section class="collaboration">
-        <h2 class="collaboration__title visually-hidden">Давайте сотрудничать.</h2>
-        <div class="collaboration__details container">
-          <div class="collaboration__wrapper">
-            <h3 class="collaboration__contacts">Контакты</h3>
-          </div>
-          <div class="collaboration__data collaboration__data--email">
-            <p class="collaboration__item">e-mail:</p>
-            <p class="collaboration__description">info@mimimishkashop.ru</p>
-          </div>
-          <div class="collaboration__data collaboration__data--address">
-            <p class="collaboration__item">адрес:</p>
-            <p class="collaboration__description">г.Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
-          </div>
-        </div>
-      </section>
-      <section class="map">
-        <h2 class ="map__title visually-hidden">Карта офиса.</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.415214209292!2d30.314314105483238!3d59.938716211437814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xba80b1be36549aba!2sHtml%20Academy!5e0!3m2!1sen!2sth!4v1673413009861!5m2!1sen!2sth"
-        height="454"
-        style="border:0;"
-        allowfullscreen
-        title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
-      </section>
-      <div class="collaboration__button button button--transparent">
-        <a class="collaboration__link button button--transparent">Напишите нам</a>
+    <main class="order">
+      <div class="order__name container">
+        <h1 class="order__title">Вязание на заказ</h1>
       </div>
+      <section class="order__content">
+        <div class="order__slogan container">
+          <h2 class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</h2>
+        </div>
+        <form class="application-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="application-form__wrapper application-form__wrapper--type">
+            <fieldset class="application-form__group application-form__group--radiobutton">
+              <legend class="application-form__title">тип</legend>
+              <ul class="application-form__group-list application-form__group-list--type">
+                <li class="application-form__radiobutton">
+                  <label class="application-form__label-radiobutton" for="accessory">
+                    <input class="application-form__input--radiobutton" type="radio" id="accessory" name="choice__group" value="accessory" checked>
+                    <span class="application-form__checkmark"></span>
+                    <span class="application-form__text-radiobutton">Аксессуар для интерьера</span>
+                  </label>
+                </li>
+                <li class="application-form__radiobutton">
+                  <label class="application-form__label-radiobutton" for="toy">
+                    <input class="application-form__input--radiobutton" type="radio" id="toy" name="choice__group" value="toy">
+                    <span class="application-form__checkmark"></span>
+                    <span class="application-form__text-radiobutton">Детская игрушка</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="application-form__wrapper application-form__wrapper--colors">
+            <fieldset class="application-form__group application-form__group--checkbox container">
+              <legend class="application-form__title">Цвет</legend>
+              <ul class="application-form__group-list application-form__group-list--checkbox">
+                <li class="application-form__checkbox">
+                  <label class="application-form__label-checkbox">
+                    <input class="application-form__input-checkbox" type="checkbox" name="color" value="white" checked>
+                    <span class="application-form__checkmark"></span>
+                    <span class="application-form__text-checkbox">Белый</span>
+                  </label>
+                </li>
+                <li class="application-form__checkbox">
+                  <label class="application-form__label-checkbox">
+                    <input class="application-form__input-checkbox" type="checkbox" name="color" value="grey" checked>
+                    <span class="application-form__checkmark"></span>
+                    <span class="application-form__text-checkbox">Серый</span>
+                  </label>
+                </li>
+                <li class="application-form__checkbox">
+                  <label class="application-form__label-checkbox">
+                    <input class="application-form__input-checkbox" type="checkbox" name="color" value="tiffani">
+                    <span class="application-form__checkmark"></span>
+                    <span class="application-form__text-checkbox">Тиффани</span>
+                  </label>
+                </li>
+                <li class="application-form__checkbox">
+                  <label class="application-form__label-checkbox">
+                    <input class="application-form__input-checkbox" type="checkbox" name="color" value="black">
+                    <span class="application-form__checkmark"></span>
+                    <span class="application-form__text-checkbox">Черный</span>
+                  </label>
+                </li>
+                <li class="application-form__checkbox">
+                  <label class="application-form__label-checkbox">
+                    <input class="application-form__input-checkbox" type="checkbox" name="color" value="pink">
+                    <span class="application-form__checkmark"></span>
+                    <span class="application-form__text-checkbox">Розовый</span>
+                  </label>
+                </li>
+                <li class="application-form__checkbox">
+                  <label class="application-form__label-checkbox">
+                    <input class="application-form__input-checkbox" type="checkbox" name="color" value="orange">
+                    <span class="application-form__checkmark"></span>
+                    <span class="application-form__text-checkbox">Оранжевый</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="application-form__wrapper application-form__wrapper--details">
+            <fieldset class="application-form__group application-form__group--details container">
+              <legend class="application-form__title">Фио</legend>
+              <div class="application-form__input">
+                <label class="application-form__label" for="name">Имя:</label>
+                <input class="application-form__field" type="text" name="name" id="name" placeholder="Введите ваше имя <sup>*</sup>" required>
+              </div>
+              <div class="application-form__input">
+                <label class="application-form__label" for="surname">Фамилия:</label>
+                <input class="application-form__field" type="text" name="surname" id="surname" placeholder="Укажите фамилию <sup>*</sup>" required>
+              </div>
+              <div class="application-form__input">
+                <label class="application-form__label" for="middle__name">Отчество:</label>
+                <input class="application-form__field" type="text" name="middle__name" id="middle__name" placeholder="Отчество, если желаете">
+              </div>
+            </fieldset>
+          </div>
+          <div class="application-form__wrapper application-form__wrapper--data">
+            <fieldset class="application-form__group container">
+              <legend class="application-form__title">Тел</legend>
+                <div class="application-form__input application-form__input--phone">
+                  <label class="application-form__label" for="phone">Телефон:</label>
+                  <input class="application-form__field" type="tel" name="phone" id="phone" value="+7 ХХХ ХХХ ХХ ХХ <sup>*</sup>" required>
+                </div>
+            </fieldset>
+          </div>
+          <div class="application-form__wrapper application-form__wrapper--data">
+            <fieldset class="application-form__group container">
+              <legend class="application-form__title">E-mail</legend>
+                <div class="application-form__owner application-form__owner--part">
+                  <div class="application-form__input application-form__input--email">
+                    <label class="application-form__label" for="email">e-mail:</label>
+                    <input class="application-form__field" type="email" name="email" id="email" value="Ваш Email <sup>*</sup>" required>
+                  </div>
+                </div>
+            </fieldset>
+          </div>
+          <div class="application-form__wrapper application-form__wrapper--additional">
+            <fieldset class="application-form__group container">
+              <legend class="application-form__title">Доп</legend>
+              <div class="application-form__input application-form__input--additional">
+                <label class="application-form__label" for="info-order"></label>
+                <textarea class="application-form__textarea" name="info-order" id="info-order" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
+            </fieldset>
+          </div>
+          <div class="application-form__send container">
+            <p class="application-form__notes"><sup>*</sup>Поля обязательны для заполнения</p>
+            <button class="application-form__button button button--transparent" type="submit">Отправить заказ</button>
+          </div>
+        </form>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__part container">
