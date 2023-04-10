@@ -1,0 +1,41 @@
+.main-nav {
+  display: flex;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .main-nav--nojs {
+    display: block;
+    position: static;
+  }
+
+  .main-nav--opened {
+    min-height: 200px;
+  }
+
+  .main-nav--closed {
+    display: none;
+  }
+
+  .main-nav--closed .main-header__toggle--nojs {
+    display: none;
+  }
+
+  .main-nav--closed .desk-list {
+    display: none;
+  }
+}
