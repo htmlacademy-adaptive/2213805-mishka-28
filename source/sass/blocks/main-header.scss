@@ -32,13 +32,24 @@
   .main-header__logo {
     height: 35px;
     width: 86px;
+    background-image: url("../img/mobile/logo-mobile.svg");
+    background-repeat: no-repeat;
+    margin-left: 116px;
+    margin-right: 67px;
+    margin-top: 22px;
+    margin-bottom: 22px;
   }
 
   .main-header__toggle {
     position: relative;
     background: url("../img/images-svg/menu-opening.svg") center no-repeat;
     background-color: transparent;
+    top: 32px;
+    right: 0;
+    width: 20px;
+    height: 14px;
     cursor: pointer;
+    justify-self: end;
     border: none;
   }
 
