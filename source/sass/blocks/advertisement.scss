@@ -3,17 +3,68 @@
   width: 100%;
 }
 
-.advertisement__name {
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 27px;
-  line-height: 30px;
+.advertisement__slogan {
+  justify-content: center;
+  align-items: center;
+  margin: 70px 30px auto 30px;
 }
 
-.advertisement__features {
+.advertisement__title {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.advertisement__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advertisement__name {
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
+  width: 50%;
+  color: #ffffff;
+  margin: 0;
+}
+
+.advertisement__features {
+  display: flex;
+  width: 100%;
+  height: 103px;
+  position: relative;
+}
+
+.advertisement__features--light {
+  background-color: #63d1bb;
+}
+
+.advertisement__features--light::before {
+  position: absolute;
+  top: 23px;
+  right: 36px;
+  content: url("../img/images-svg/interior-feature.svg");
+  z-index: 1;
+}
+
+.advertisement__features--dark {
+  background-color: #56c3b2;
+}
+
+.advertisement__features--dark::before {
+  position: absolute;
+  top: 23px;
+  right: 36px;
+  content: url("../img/images-svg/toy-feature.svg");
+  z-index: 1;
+}
+
+.advertisement__link {
+  margin-left: 30px;
+  margin-top: 24px;
+  text-decoration: none;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -25,6 +76,23 @@
       background-image: url("../img/mobile/hero-mobile@2x.png");
     }
   }
+
+  .advertisement__slogan {
+    justify-content: center;
+    align-items: center;
+    margin: 73px 30px auto 30px;
+  }
+
+  .advertisement__container {
+    flex-direction: column;
+  }
+
+  .advertisement__title {
+    font-size: 27px;
+    line-height: 30px;
+    margin-bottom: 120px;
+    margin-top: 73px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -34,6 +102,12 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/tablet/hero-tablet@2x.png");
     }
+  }
+
+  .advertisement__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 

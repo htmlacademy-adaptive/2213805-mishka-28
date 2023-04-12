@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport"
     content="width=device-width, initial-scale=1">
@@ -28,7 +29,7 @@
             <a class="site-list__link" href="#">Поиск по сайту</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Корзина:пока пуста</a>
+            <a class="site-list__link btn btn-open-form" href="form.html">Корзина:пока пуста</a>
           </li>
         </ul>
         <ul class="main-nav__add desk-list">
@@ -49,13 +50,19 @@
       <section class="advertisement">
         <div class="advertisement__wrapper">
           <div class="advertisement__slogan">
-            <h2 class="advertisement__name">Милые штуки ручной работы для дома</h2>
+            <h2 class="advertisement__title">Милые штуки <br>ручной <br>работы для дома</h2>
           </div>
-          <div class="advertisement__features">
-            Предметы интерьера
-          </div>
-          <div class="advertisement__features">
-            Детские игрушки
+          <div class="advertisement__container">
+            <div class="advertisement__features advertisement__features--light">
+              <a class="advertisement__link" href="catalog.html">
+                <p class="advertisement__name">Предметы интерьера</p>
+              </a>
+            </div>
+            <div class="advertisement__features advertisement__features--dark">
+              <a class="advertisement__link" href="catalog.html">
+                <p class="advertisement__name">Детские игрушки</p>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -108,23 +115,23 @@
           <h2 class="features__title">Коротко о нас:</h2>
         </div>
         <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__description">Экологически чистые материалы</h3>
+          <li class="features__item features__item--material">
+            <h3 class="features__description features__description--material">Экологически <br>чистые материалы</h3>
           </li>
-          <li class="features__item">
-            <h3 class="features__description features__description--scandy">Скандинавский стиль по российской цене</h3>
+          <li class="features__item features__item--scandy">
+            <h3 class="features__description features__description--scandy">Скандинавский стиль <br>по российской цене</h3>
           </li>
-          <li class="features__item">
+          <li class="features__item features__item--likes">
             <h3 class="features__description features__description--likes">Увеличивает лайки на фотографиях</h3>
           </li>
-          <li class="features__item">
-            <h3 class="features__description features__description--handmade">Связано вручную с любовью и умилением</h3>
+          <li class="features__item features__item--handmade">
+            <h3 class="features__description features__description--handmade">Связано вручную <br>с любовью и умилением</h3>
           </li>
-          <li class="features__item">
-            <h3 class="features__description features__description--support">Поддержка отечественного производителя</h3>
+          <li class="features__item features__item--support">
+            <h3 class="features__description features__description--support">Поддержка отечественного <br>производителя</h3>
           </li>
-          <li class="features__item">
-            <h3 class="features__description features__description--package">Поставляется в подарочной упаковке</h3>
+          <li class="features__item features__item--package">
+            <h3 class="features__description features__description--package">Поставляется <br>в подарочной упаковке</h3>
           </li>
         </ul>
       </section>
@@ -132,49 +139,55 @@
         <div class="review__slogan">
           <h2 class="review__title>">Отзывы</h2>
         </div>
-        <p class="review__text">
-          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-у популярных инстамамочек.
-В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-        </p>
-        <p class="review__name">Анастасия Красильникова</p>
-        <p class="review__email">@misssssiskras</p>
+        <div class="review-upload">
+          <p class="review-upload__text">
+            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
+  <br>у популярных инстамамочек.
+  <br>В отчаянии, я накупила <br>аксессуаров и игрушек в Мишке,
+  <br>и мои фотографии сразу стали более стильными, а также <br>набирают больше лайков!
+          </p>
+          <p class="review-upload__name">Анастасия Красильникова</p>
+          <p class="review-upload__email">@misssssiskras</p>
+        </div>
         <div class="review__arrows">
-          <a class="review__link review__link--back" href="#"></a>
-          <a class="review__link review__link--forward" href="#"></a>
+          <button class="review__arrows__button button button--back">
+            <img class="review__arrow__back" src="img/images-svg/arrow-back.svg">
+          </button>
+            <button class="review__arrows__button button button--forward">
+              <img class="review__arrow__forward" src="img/images-svg/arrow-forward.svg">
+            </button>
         </div>
         <div class="review__write">
-          <a class="review__button button button--transparent" href="#"></a>
+          <a class="review__button button button--transparent" href="#">Написать</a>
         </div>
       </section>
       <section class="collaboration">
         <h2 class="collaboration__title visually-hidden">Давайте сотрудничать.</h2>
         <div class="collaboration__details container">
           <div class="collaboration__wrapper">
-            <h3 class="collaboration__contacts">Контакты</h3>
+            <h2 class="collaboration__contacts">Контакты</h2>
           </div>
           <div class="collaboration__data collaboration__data--email">
             <p class="collaboration__item">e-mail:</p>
-            <p class="collaboration__description">info@mimimishkashop.ru</p>
+            <a class="collaboration__description collaboration__description--email" href="#">info@mimimishkashop.ru</a>
           </div>
           <div class="collaboration__data collaboration__data--address">
             <p class="collaboration__item">адрес:</p>
-            <p class="collaboration__description">г.Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
+            <p class="collaboration__description">г.Санкт-Петербург <br>ул. Большая Конюшенная <br>д. 19/8, офис 101</p>
           </div>
         </div>
+        <div class="map">
+          <h2 class ="map__title visually-hidden">Карта офиса.</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.415214209292!2d30.314314105483238!3d59.938716211437814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xba80b1be36549aba!2sHtml%20Academy!5e0!3m2!1sen!2sth!4v1673413009861!5m2!1sen!2sth"
+          height="454"
+          style="border:0;"
+          allowfullscreen
+          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+        </div>
+        <div class="feedback">
+          <a class="feedback__button button button--transparent" href="#">Напишите нам</a>
+        </div>
       </section>
-      <section class="map">
-        <h2 class ="map__title visually-hidden">Карта офиса.</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.415214209292!2d30.314314105483238!3d59.938716211437814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xba80b1be36549aba!2sHtml%20Academy!5e0!3m2!1sen!2sth!4v1673413009861!5m2!1sen!2sth"
-        height="454"
-        style="border:0;"
-        allowfullscreen
-        title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
-      </section>
-      <div class="collaboration__button button button--transparent">
-        <a class="collaboration__link button button--transparent">Напишите нам</a>
-      </div>
     </main>
     <footer class="footer">
       <div class="footer__part container">
@@ -221,5 +234,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu-open.js"></script>
   </body>
 </html>

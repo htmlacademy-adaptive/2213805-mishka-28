@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport"
     content="width=device-width, initial-scale=1">
@@ -28,7 +29,7 @@
             <a class="site-list__link" href="#">Поиск по сайту</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Корзина:пока пуста</a>
+            <a class="site-list__link btn btn-open-form" href="form.html">Корзина:пока пуста</a>
           </li>
         </ul>
         <ul class="main-nav__add desk-list">
@@ -44,9 +45,9 @@
         </ul>
       </nav>
     </header>
-    <main class="catalog-container catalog">
-        <div class="container">
-            <h1 class="page-title page-title--catalog">Каталог товаров</h1>
+    <main class="catalog">
+        <div class="intro container">
+            <h1 class="intro__title--catalog">Каталог товаров</h1>
         </div>
         <section class="catalog__options">
             <div class="catalog__wrapper">
@@ -65,7 +66,7 @@
                             </a>
                             <p class="catalog-card__description">Рост 30 см, вес 200 г</p>
                             <p class="catalog-card__price">1 200 руб.</p>
-                            <span class="catalog-card__basket"></span>
+                            <a class="btn btn-open-form" href="#"></a>
                         </div>
                     </li>
                     <li class="catalog__card catalog-card">
@@ -82,7 +83,7 @@
                             </a>
                             <p class="catalog-card__description">Диаметр 15 см, высота 10 см</p>
                             <p class="catalog-card__price">690 руб.</p>
-                            <span class="catalog-card__basket"></span>
+                            <a class="btn btn-open-form" href="#"></a>
                         </div>
                     </li>
                     <li class="catalog__card catalog-card">
@@ -99,28 +100,30 @@
                             </a>
                             <p class="catalog-card__description">Диаметр 30 см, высота 30 см</p>
                             <p class="catalog-card__price">1 500 руб.</p>
-                            <span class="catalog-card__basket"></span>
-                        </div>
-                    </li>
-                    <li class="catalog__card catalog-card catalog-card--additional">
-                        <div class="catalog-card__information catalog-card__information--additional">
-                            <a class="catalog-card__link catalog-card__link--additional" href="form.html">
-                                <picture>
-                                    <source media="(min-width: 1150px)" srcset="img/desktop/video-desktop@1x.png 1x, img/desktop/video-desktop@2x.png 2x">
-                                    <source media="(min-width: 772px)" srcset="img/tablet/video-tablet@1x.png 1x, img/tablet/video-tablet@2x.png 2x">
-                                    <img class="catalog-card__image" src="img/mobile/video-mobile@1x.png" srcset="img/mobile/video-mobile@2x.png 2x" width="260" height="150" alt="Фото игрушки зайчика.">
-                                </picture>
-                            </a>
-                            <a class="catalog-card__title catalog-card__title--additional" href="form.html">
-                                <h3 class="catalog-card__name">Процесс производства</h3>
-                            </a>
-                            <p class="catalog-card__description catalog-card__description--additional">
-                                По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-                                <a class="catalog-card__button button button--transparent" href="form.html">Сделать заказ</a>
+                            <a class="btn btn-open-form" href="#"></a>
                         </div>
                     </li>
                 </ul>
             </div>
+        </section>
+        <section class="manufacturing">
+          <div class="manufacturing__title">
+            <h2 class="manufacturing__slogan">Процесс производства</h2>
+          </div>
+          <div class="manufacturing__wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/desktop/video-desktop@1x.png 1x, img/desktop/video-desktop@2x.png 2x">
+                <source media="(min-width: 772px)" srcset="img/tablet/video-tablet@1x.png 1x, img/tablet/video-tablet@2x.png 2x">
+                  <img class="manufacturing__image" src="img/mobile/video-mobile@1x.png" srcset="img/mobile/video-mobile@2x.png 2x" width="260" height="150" alt="Фото игрушки зайчика.">
+              </picture>
+              <button class="btn btn--play">
+              </button>
+          </div>
+          <div class="manufacturing__text">
+            <p class="catalog-card__description catalog-card__description--additional">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          </div>
+            <a class="catalog-card__button button button--transparent" href="form.html">Сделать заказ</a>
         </section>
     </main>
     <footer class="footer">
@@ -176,15 +179,15 @@
               <h3 class="basket-form__description">Выберите размер:</h3>
               <ul class="basket-form__list">
                 <li class="basket-form__option">
-                  <a class="basket-form__link">s
+                  <a class="basket-form__link">
                   </a>
                 </li>
                 <li class="basket-form__option">
-                  <a class="basket-form__link">m
+                  <a class="basket-form__link">
                   </a>
                 </li>
                 <li class="basket-form__option">
-                  <a class="basket-form__link">l
+                  <a class="basket-form__link">
                   </a>
                 </li>
               </ul>
