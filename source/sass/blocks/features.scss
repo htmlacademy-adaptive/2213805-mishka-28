@@ -5,9 +5,73 @@
   line-height: 30px;
 }
 
+.features__list {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
 .features__description {
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+  text-decoration: none;
+}
+
+.features__item {
+  display: flex;
+  text-decoration: none;
+  position: relative;
+  margin-top: 83px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .features {
+    margin: 31px 30px 58px;
+  }
+
+  .features__item--material::before {
+    position: absolute;
+    top: -56px;
+    left: 8px;
+    content: url("../img/images-svg/material-icon.svg");
+  }
+
+  .features__item--scandy::before {
+    position: absolute;
+    top: -56px;
+    left: 8px;
+    content: url("../img/images-svg/scandy-icon.svg");
+  }
+
+  .features__item--likes::before {
+    position: absolute;
+    top: -56px;
+    left: 8px;
+    content: url("/img/images-svg/likes-icon.svg");
+  }
+
+  .features__item--handmade::before {
+    position: absolute;
+    top: -56px;
+    left: 8px;
+    content: url("../img/images-svg/handmade-icon.svg");
+  }
+
+  .features__item--support::before {
+    position: absolute;
+    top: -56px;
+    left: 8px;
+    content: url("../img/images-svg/support-icon.svg");
+  }
+
+  .features__item--package::before {
+    position: absolute;
+    top: -56px;
+    left: 8px;
+    content: url("../img/images-svg/package-icon.svg");
+  }
 }
