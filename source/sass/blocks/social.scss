@@ -1,13 +1,11 @@
-.footer__social {
-  margin-top: 39px;
-}
-
 .social__list {
   padding: 25px 89px 28px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   list-style: none;
+  margin: 0;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .social__item {

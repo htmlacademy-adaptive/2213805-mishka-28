@@ -38,6 +38,10 @@
  }
 
  @media (max-width: $mobile-width-only) {
+  .collaboration {
+    margin-bottom: 39px;
+  }
+  
   .collaboration__wrapper {
     margin-bottom: 28px;
   }
