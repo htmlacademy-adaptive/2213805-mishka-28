@@ -1,0 +1,9 @@
+.catalog__list {
+  list-style-type: none;
+}
+
+.catalog__card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
