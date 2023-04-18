@@ -1,21 +1,32 @@
 .manufacturing {
-  margin: 30px;
+  margin: 30px 30px 58px 30px;
   border: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.manufacturing__title {
+  display: flex;
 }
 
 .manufacturing__slogan {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  margin-left: 91px;
   position: relative;
+  display: flex;
+  margin: 21px 13px 26px 91px;
 }
 
 .manufacturing__slogan::before {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -20px;
   content: url("../img/images-svg/video.svg");
+  width: 32px;
+  height: 22px;
+  display: block;
 }
 
 .manufacturing__description {
@@ -29,4 +40,18 @@
 
 .manufacturing__text {
   margin-left: 34px;
+}
+
+.manufacturing__wrapper {
+  position: relative;
+}
+
+.manufacturing__button {
+  padding: 18px 11px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 192px;
+  min-height: 52px;
+  margin-bottom: 33px;
 }

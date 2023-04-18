@@ -9,6 +9,10 @@
 }
 
 .btn--play {
-  background-image: url("../img/images-svg/play.svg");
+  position: absolute;
   z-index: 1;
+  background: transparent;
+  top: 37px;
+  left: 80px;
+  border: none;
 }
