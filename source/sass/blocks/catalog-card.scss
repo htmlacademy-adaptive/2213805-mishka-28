@@ -22,6 +22,7 @@
   line-height: 30px;
   color:#444444;
   position: relative;
+  margin-bottom: 41px;
 }
 
 .catalog-card__description::after {
@@ -39,12 +40,15 @@
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
+  position: relative;
+  margin-bottom: 26px;
+  margin-top: 0;
 }
 
 .catalog-card__price::after {
   position: absolute;
-  top: 17px;
-  left: 0;
+  top: 0;
+  left: 185px;
   content: url("../img/images-svg/basket-img.svg");
 }
 

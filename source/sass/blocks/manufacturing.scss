@@ -1,0 +1,32 @@
+.manufacturing {
+  margin: 30px;
+  border: 1px solid #ececec;
+}
+
+.manufacturing__slogan {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin-left: 91px;
+  position: relative;
+}
+
+.manufacturing__slogan::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: url("../img/images-svg/video.svg");
+}
+
+.manufacturing__description {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+  margin-bottom: 41px;
+}
+
+.manufacturing__text {
+  margin-left: 34px;
+}
