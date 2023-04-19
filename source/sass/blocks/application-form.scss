@@ -14,14 +14,21 @@
 .application-form__group {
   padding: 0;
   margin: 0;
-  // border: none;
+  border: none;
   position: relative;
+  list-style-type: none;
 }
 
 .application-form__group-list {
+  display: flex;
   padding: 0;
   margin: 0;
   list-style-type: none;
+  flex-direction: column;
+}
+
+.application-form__group-list--type {
+  margin-top: 30px;
 }
 
 .application-form__title {
@@ -32,14 +39,14 @@
   text-transform: uppercase;
   color: #63D1BB;
   position: absolute;
-  top: -20px;
-  left: 10px;
+  top: -8px;
+  left: 0;
   background-color: #ffffff;
   padding: 0 11px;
 }
 
 .application-form__radiobutton {
-  margin-top: 24px;
+  margin-top: 11px;
   display: flex;
 
   &:last-child {
@@ -75,31 +82,32 @@
       opacity: 0.3;
     }
 
-  .application-form__checkmark {
-    position: absolute;
-    top: -5px;
-    left: 0;
-    height: 30px;
-    width: 30px;
-    border: 1px solid #444444;
-    border-radius: 50%;
-  }
+    .application-form__checkmark {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      height: 30px;
+      width: 30px;
+      border: 1px solid #444444;
+      border-radius: 50%;
+    }
 
-  .application-form__checkmark::after {
-    content: "";
-    position: absolute;
-    display: none;
-    top: 8px;
-    left: 8px;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background-color: #63D1BB;
-  }
+    .application-form__checkmark::after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 8px;
+      left: 8px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background-color: #63D1BB;
+    }
 
-  .application-form__checkmark {
-    width: 30px;
-    height: 30px;
+    .application-form__checkmark {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 
