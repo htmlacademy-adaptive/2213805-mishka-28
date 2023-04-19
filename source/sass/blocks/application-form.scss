@@ -1,22 +1,20 @@
 .application-form {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 17px 0 25px 0;
 }
 
 .application-form__wrapper {
-  display: flex;
-  border-top: 1px solid #62D1BA;
-  width: 100%;
   margin-top: 20px;
 }
 
 .application-form__group {
   padding: 0;
-  margin: 0;
+  // margin-right: 29px;
   border: none;
   position: relative;
   list-style-type: none;
+  border-top: 1px solid #62D1BA;
 }
 
 .application-form__group-list {
@@ -31,6 +29,10 @@
   margin-top: 30px;
 }
 
+.application-form__wrapper--details {
+  margin-top: 41px;
+}
+
 .application-form__title {
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 700;
@@ -42,7 +44,45 @@
   top: -8px;
   left: 0;
   background-color: #ffffff;
-  padding: 0 11px;
+  padding: 0 20px 0 0;
+}
+
+.application-form__input--name {
+  margin-top: 36px;
+}
+
+.application-form__input--surname {
+  margin-top: 22px;
+}
+
+.application-form__wrapper--data {
+  margin-top: 42px;
+}
+
+.application-form__input--phone {
+  margin-top: 26px;
+}
+
+.application-form__field--phone::after {
+  display: block;
+  background-image: url("../img/images-svg/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+  width: 22px;
+  height: 21px;
+  content: "";
+}
+
+.application-form__field--email::after {
+  display: block;
+  background-image: url("../img/images-svg/mail.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+  width: 22px;
+  height: 21px;
+  content: "";
 }
 
 .application-form__radiobutton {
@@ -81,38 +121,111 @@
     &::after {
       opacity: 0.3;
     }
+  }
 
-    .application-form__checkmark {
-      position: absolute;
-      top: -5px;
-      left: 0;
-      height: 30px;
-      width: 30px;
-      border: 1px solid #444444;
-      border-radius: 50%;
-    }
+  .application-form__checkmark {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #444444;
+    border-radius: 50%;
+  }
 
-    .application-form__checkmark::after {
-      content: "";
-      position: absolute;
-      display: none;
-      top: 8px;
-      left: 8px;
-      width: 13px;
-      height: 13px;
-      border-radius: 50%;
-      background-color: #63D1BB;
-    }
-
-    .application-form__checkmark {
-      width: 30px;
-      height: 30px;
-    }
+  .application-form__checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 8px;
+    left: 8px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #63D1BB;
   }
 }
 
 .application-form__checkbox {
   margin-top: 23px;
+
+  &:hover {
+    color: #222222;
+  }
+
+  &:active {
+    color: #222222;
+    opacity: 0.3;
+  }
+
+  .application-form__label-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+  }
+
+  .application-form__input-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .application-form__checkmark {
+    position: absolute;
+    left: 0;
+    height: 38px;
+    width: 38px;
+    border: 1px solid #444444;
+  }
+
+  .application-form__checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 10px;
+    left: 5px;
+    width: 33%;
+    height: 57%;
+    border: solid #000000;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+  }
+
+  .application-form__checkbox .application-form__checkmark {
+    width: 30px;
+    height: 30px;
+  }
+
+  .application-form__checkbox .application-form__checkmark {
+    position: absolute;
+    left: 0;
+    top: -5px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #cdcdcd;
+  }
+
+  .application-form__checkmark::after {
+    top: 1px;
+    left: 8px;
+  }
+
+  .application-form__input-checkbox:checked ~ .application-form__checkmark {
+    &::after {
+      display: block;
+    }
+  }
+
+  .application-form__input-checkbox:disabled ~ .application-form__checkmark {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .application-form__text {
@@ -120,6 +233,7 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+  margin-left: 15px;
 }
 
 .application-form__label {
@@ -127,6 +241,7 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+  color: #000000;
 }
 
 .application-form__input-checkbox {
@@ -135,4 +250,61 @@
   border: 1px solid #444444;
   background-color: transparent;
   flex-grow: 1;
+}
+
+.application-form__input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.application-form__field {
+  flex-grow: 1;
+  width: 260px;
+  height: 52px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-bottom: 2px solid #444444;
+  outline: none;
+}
+
+.application-form__textarea {
+  border: 2px solid #444444;
+  height: 142px;
+  width: 260px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+  padding-top: 17px;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.application-form__notes {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+  margin-bottom: 30px;
+}
+
+.application-form__button {
+  padding: 18px 37px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 260px;
+  min-height: 52px;
+  margin-bottom: 33px;
+  background-color: #FFFFFF;
+  font-size: 17px;
+  line-height: 16px;
 }
