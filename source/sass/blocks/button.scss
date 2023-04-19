@@ -7,3 +7,12 @@
   color: #444444;
   border: #444444 2px solid;
 }
+
+.btn--play {
+  position: absolute;
+  z-index: 1;
+  background: transparent;
+  top: 37px;
+  left: 80px;
+  border: none;
+}

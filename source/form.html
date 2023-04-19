@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport"
@@ -11,7 +11,7 @@
   <body class="page__body">
     <header class="main-header container">
       <div class="main-header__wrapper">
-        <a class="main-header__logo">
+        <a class="main-header__logo" href="index.html">
         </a>
         <button class="main-header__toggle main-header__toggle--nojs" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -43,14 +43,14 @@
         </ul>
       </nav>
     </header>
-    <main class="order">
+    <main class="order container">
       <div class="intro container">
         <h1 class="intro__title">Вязание на заказ</h1>
       </div>
       <section class="order__content">
         <h2 class="order__title visually-hidden">Заказ продукции.</h2>
-        <div class="order__slogan container">
-          <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <div class="order__slogan">
+          <p class="order__text">Мы будем рады воплотить в жизнь <br>ваши пожелания! Заполните простую <br>форму заказа и мы свяжемся с вами, <br>чтобы уточнить детали.</p>
         </div>
         <form class="application-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="application-form__wrapper application-form__wrapper--type">
@@ -61,107 +61,107 @@
                   <label class="application-form__label-radiobutton" for="accessory">
                     <input class="application-form__input-radiobutton" type="radio" id="accessory" name="choice__group" value="accessory" checked>
                     <span class="application-form__checkmark"></span>
-                    <span class="application-form__text-radiobutton">Аксессуар для интерьера</span>
+                    <span class="application-form__text application-form__text--radiobutton">Аксессуар для интерьера</span>
                   </label>
                 </li>
                 <li class="application-form__radiobutton">
                   <label class="application-form__label-radiobutton" for="toy">
                     <input class="application-form__input-radiobutton" type="radio" id="toy" name="choice__group" value="toy">
                     <span class="application-form__checkmark"></span>
-                    <span class="application-form__text-radiobutton">Детская игрушка</span>
+                    <span class="application-form__text application-form__text--radiobutton">Детская игрушка</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
           </div>
           <div class="application-form__wrapper application-form__wrapper--colors">
-            <fieldset class="application-form__group application-form__group--checkbox container">
+            <fieldset class="application-form__group application-form__group--checkbox">
               <legend class="application-form__title">Цвет</legend>
               <ul class="application-form__group-list application-form__group-list--checkbox">
                 <li class="application-form__checkbox">
                   <label class="application-form__label-checkbox">
                     <input class="application-form__input-checkbox" type="checkbox" name="color" value="white" checked>
                     <span class="application-form__checkmark"></span>
-                    <span class="application-form__text-checkbox">Белый</span>
+                    <span class="application-form__text application-form__text--checkbox">Белый</span>
                   </label>
                 </li>
                 <li class="application-form__checkbox">
                   <label class="application-form__label-checkbox">
                     <input class="application-form__input-checkbox" type="checkbox" name="color" value="grey" checked>
                     <span class="application-form__checkmark"></span>
-                    <span class="application-form__text-checkbox">Серый</span>
+                    <span class="application-form__text application-form__text--checkbox">Серый</span>
                   </label>
                 </li>
                 <li class="application-form__checkbox">
                   <label class="application-form__label-checkbox">
                     <input class="application-form__input-checkbox" type="checkbox" name="color" value="tiffani">
                     <span class="application-form__checkmark"></span>
-                    <span class="application-form__text-checkbox">Тиффани</span>
+                    <span class="application-form__text application-form__text--checkbox">Тиффани</span>
                   </label>
                 </li>
                 <li class="application-form__checkbox">
                   <label class="application-form__label-checkbox">
                     <input class="application-form__input-checkbox" type="checkbox" name="color" value="black">
                     <span class="application-form__checkmark"></span>
-                    <span class="application-form__text-checkbox">Черный</span>
+                    <span class="application-form__text application-form__text--checkbox">Черный</span>
                   </label>
                 </li>
                 <li class="application-form__checkbox">
                   <label class="application-form__label-checkbox">
                     <input class="application-form__input-checkbox" type="checkbox" name="color" value="pink">
                     <span class="application-form__checkmark"></span>
-                    <span class="application-form__text-checkbox">Розовый</span>
+                    <span class="application-form__text application-form__text--checkbox">Розовый</span>
                   </label>
                 </li>
                 <li class="application-form__checkbox">
                   <label class="application-form__label-checkbox">
                     <input class="application-form__input-checkbox" type="checkbox" name="color" value="orange">
                     <span class="application-form__checkmark"></span>
-                    <span class="application-form__text-checkbox">Оранжевый</span>
+                    <span class="application-form__text application-form__text--checkbox">Оранжевый</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
           </div>
           <div class="application-form__wrapper application-form__wrapper--details">
-            <fieldset class="application-form__group application-form__group--details container">
+            <fieldset class="application-form__group application-form__group--details">
               <legend class="application-form__title">Фио</legend>
-              <div class="application-form__input">
-                <label class="application-form__label" for="name">Имя:<sup>*</sup></label>
-                <input class="application-form__field" type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+              <div class="application-form__input application-form__input--name">
+                <label class="application-form__label" for="name">Имя:</label>
+                <input class="application-form__field" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
               </div>
-              <div class="application-form__input">
-                <label class="application-form__label" for="surname">Фамилия:<sup>*</sup></label>
-                <input class="application-form__field" type="text" name="surname" id="surname" placeholder="Укажите фамилию" required>
+              <div class="application-form__input application-form__input--surname">
+                <label class="application-form__label" for="surname">Фамилия:</label>
+                <input class="application-form__field" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
               </div>
-              <div class="application-form__input">
+              <div class="application-form__input application-form__input--surname">
                 <label class="application-form__label" for="middle__name">Отчество:</label>
                 <input class="application-form__field" type="text" name="middle__name" id="middle__name" placeholder="Отчество, если желаете">
               </div>
             </fieldset>
           </div>
           <div class="application-form__wrapper application-form__wrapper--data">
-            <fieldset class="application-form__group container">
+            <fieldset class="application-form__group application-form__group--phone">
               <legend class="application-form__title">Тел</legend>
                 <div class="application-form__input application-form__input--phone">
-                  <label class="application-form__label" for="phone">Телефон:<sup>*</sup></label>
-                  <input class="application-form__field" type="tel" name="phone" id="phone" value="+7 ХХХ ХХХ ХХ ХХ" required>
+                  <label class="application-form__label visually-hidden" for="phone">Телефон:<sup>*</sup></label>
+                  <input class="application-form__field application-form__field--phone" type="tel" name="phone" id="phone" value="+7 ХХХ ХХХ ХХ ХХ*" required>
                 </div>
             </fieldset>
           </div>
           <div class="application-form__wrapper application-form__wrapper--data">
-            <fieldset class="application-form__group container">
+            <fieldset class="application-form__group application-form__group--email">
               <legend class="application-form__title">E-mail</legend>
                 <div class="application-form__owner application-form__owner--part">
                   <div class="application-form__input application-form__input--email">
-                    <label class="application-form__label" for="email">e-mail:<sup>*</sup></label>
-                    <input class="application-form__field" type="email" name="email" id="email" value="Ваш Email" required>
+                    <label class="application-form__label visually-hidden" for="email">e-mail:</label>
+                    <input class="application-form__field application-form__field--email" type="email" name="email" id="email" value="Ваш Email*" required>
                   </div>
                 </div>
             </fieldset>
           </div>
           <div class="application-form__wrapper application-form__wrapper--additional">
-            <fieldset class="application-form__group container">
+            <fieldset class="application-form__group application-form__group--add">
               <legend class="application-form__title">Доп</legend>
               <div class="application-form__input application-form__input--additional">
                 <label class="application-form__label" for="info-order"></label>
@@ -169,7 +169,7 @@
               </div>
             </fieldset>
           </div>
-          <div class="application-form__send container">
+          <div class="application-form__send">
             <p class="application-form__notes"><sup>*</sup>Поля обязательны для заполнения</p>
             <button class="application-form__button button button--transparent" type="submit">Отправить заказ</button>
           </div>
@@ -221,5 +221,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

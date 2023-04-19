@@ -1,5 +1,5 @@
 .footer {
-
+  background-color: #f1f1f1;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -12,6 +12,19 @@
   }
 
   .footer__copyright {
-    background-color: #f1f1f1;
+    padding: 29px 69px 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .copyright__link {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 700;
+    // margin-right: 25px;
+    text-decoration: none;
   }
 }
