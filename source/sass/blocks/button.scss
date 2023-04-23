@@ -15,4 +15,21 @@
   top: 37px;
   left: 80px;
   border: none;
+  background-image: url("../img/images-svg/play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 101px;
+  height: 77px;
+}
+
+.button--forward {
+  background-image: url("../img/images-svg/arrow-forward.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button--back {
+  background-image: url("../img/images-svg/arrow-back.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

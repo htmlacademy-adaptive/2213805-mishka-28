@@ -27,7 +27,8 @@
   line-height: 24px;
   width: 50%;
   color: #ffffff;
-  margin: 0;
+  margin-left: 30px;
+  margin-top: 24px;
 }
 
 .advertisement__features {
@@ -35,6 +36,7 @@
   width: 100%;
   height: 103px;
   position: relative;
+  text-decoration: none;
 }
 
 .advertisement__features--light {
@@ -59,12 +61,6 @@
   right: 36px;
   content: url("../img/images-svg/toy-feature.svg");
   z-index: 1;
-}
-
-.advertisement__link {
-  margin-left: 30px;
-  margin-top: 24px;
-  text-decoration: none;
 }
 
 @media (max-width: $mobile-width-only) {
