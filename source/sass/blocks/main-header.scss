@@ -73,6 +73,9 @@
 
   .main-header__wrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 48px;
   }
 
   .main-header__toggle {
