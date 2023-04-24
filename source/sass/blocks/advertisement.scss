@@ -1,12 +1,14 @@
 .advertisement {
-  display: flex;
   width: 100%;
+  margin: 0;
+  margin-top: -10px;
+  padding: 0;
 }
 
 .advertisement__slogan {
   justify-content: center;
   align-items: center;
-  margin: 70px 30px auto 30px;
+  // margin: 70px 30px auto 30px;
 }
 
 .advertisement__title {
@@ -67,6 +69,10 @@
   .advertisement__wrapper {
     background-image: url("../img/mobile/hero-mobile@1x.png");
     background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mobile/hero-mobile@2x.png");
@@ -76,11 +82,12 @@
   .advertisement__slogan {
     justify-content: center;
     align-items: center;
-    margin: 73px 30px auto 30px;
+    // margin: 73px 30px auto 30px;
   }
 
   .advertisement__container {
     flex-direction: column;
+    margin-top: 20px;
   }
 
   .advertisement__title {

@@ -182,31 +182,35 @@
           </div>
         </div>
       </footer>
-      <div class="modal modal--close">
+      <div class="modal modal--open modal--close">
         <section class="modal__content">
           <h2 class="modal__title">Добавить в корзину</h2>
-          <form class="basket-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="basket-form__wrapper container">
-              <h3 class="basket-form__description">Выберите размер:</h3>
-              <ul class="basket-form__list">
-                <li class="basket-form__option">
-                  <a class="basket-form__link">
+          <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="modal-form__wrapper container">
+              <h3 class="modal-form__description">Выберите размер:</h3>
+              <ul class="modal-form__list">
+                <li class="modal-form__option">
+                  <a class="modal-form__link">
+                    <p class="modal-form__text">S</p>
                   </a>
                 </li>
-                <li class="basket-form__option">
-                  <a class="basket-form__link">
+                <li class="modal-form__option">
+                  <a class="modal-form__link">
+                    <p class="modal-form__text">M</p>
                   </a>
                 </li>
-                <li class="basket-form__option">
-                  <a class="basket-form__link">
+                <li class="modal-form__option">
+                  <a class="modal-form__link">
+                    <p class="modal-form__text">L</p>
                   </a>
                 </li>
               </ul>
-              <a class="basket-form__button button button--green">Добавить</a>
+              <a class="modal-form__button button button--green">Добавить</a>
             </div>
           </form>
         </section>
       </div>
       <script src="./js/script.js"></script>
+      <script src="./js/modal.js"></script>
     </body>
   </html>
