@@ -1,3 +1,9 @@
-.desk-list__item--delivery {
-  color: #444444;
+
+@media (min-width: $tablet-width) {
+  .desk-list__item--arrivals  {
+    display: none;
+  }
+  .desk-list__item--sale {
+    display: none;
+  }
 }

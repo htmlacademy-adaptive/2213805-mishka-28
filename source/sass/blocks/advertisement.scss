@@ -100,6 +100,9 @@
 
 @media (min-width: $tablet-width) {
   .advertisement__wrapper {
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
     background-image: url("../img/tablet/hero-tablet@1x.png");
 
     @media (min-resolution: 2dppx) {
@@ -107,10 +110,32 @@
     }
   }
 
+  .advertisement__slogan {
+    margin-top: 155px;
+    margin-right: 52px;
+    margin-left: 52px;
+    margin-bottom: 372px;
+  }
+
   .advertisement__container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+  }
+
+  .advertisement__features {
+    width: 50%;
+  }
+
+  .advertisement__title {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+
+    & br {
+      display: none;
+    }
   }
 }
 
