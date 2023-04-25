@@ -114,7 +114,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promotion {
+  .promotion::before {
     background-image: url("../img/images-svg/zigzag-desktop.svg");
     background-position: top center;
   }
