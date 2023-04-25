@@ -81,6 +81,8 @@
     flex-wrap: wrap;
     flex-direction: row;
     // height: 89px;
+    position: relative;
+    // justify-content: flex-start;
   }
 
   .main-header__wrapper {
@@ -99,8 +101,18 @@
   }
 
   .main-header__logo {
+    position: absolute;
+    top: 26px;
+    left: 40px;
     height: 46px;
     width: 113px;
     background: url("../img/tablet/mishka-logo-tablet.svg") center no-repeat;
+  }
+
+  .main-header__item {
+    display: flex;
+    justify-content: right;
+    margin-top: -40px;
+    margin-left: 380px;
   }
 }

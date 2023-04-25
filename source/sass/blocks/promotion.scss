@@ -14,7 +14,7 @@
   text-transform: uppercase;
 }
 
-.promotion__slogan {
+.promotion__text {
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -110,5 +110,34 @@
 
   .promotion__order {
     margin-bottom: 52px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promotion {
+    background-image: url("../img/images-svg/zigzag-desktop.svg");
+    background-position: top center;
+  }
+
+  .promotion__title {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+    padding: 0 10px 0 0;
+  }
+
+  .promotion__goods {
+    font-size: 17px;
+    line-height: 17px;
+    padding: 2px 15px;
+  }
+
+  .promotion__slogan {
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: grid;
+    grid-template-columns: 1fr 105px min-content;
   }
 }
