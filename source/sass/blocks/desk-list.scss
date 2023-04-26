@@ -1,9 +1,21 @@
 
-@media (min-width: $tablet-width) {
-  .desk-list__item--arrivals  {
-    display: none;
+// @media (min-width: $tablet-width) {
+//   .desk-list__item--arrivals  {
+//     display: none;
+//   }
+//   .desk-list__item--sale {
+//     display: none;
+//   }
+// }
+
+@media (max-width: $desktop-width) {
+  .desk-list__item--arrivals {
+    margin-top: 19px;
+    margin-right: 45px;
+    margin-left: 51px;
+
   }
-  .desk-list__item--sale {
-    display: none;
+  .desk-list__link {
+
   }
 }

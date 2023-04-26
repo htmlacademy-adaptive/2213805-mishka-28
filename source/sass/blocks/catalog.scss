@@ -28,7 +28,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .catalog__list {
     list-style-type: none;
     margin: 30px;

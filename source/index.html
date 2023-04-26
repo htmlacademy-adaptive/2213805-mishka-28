@@ -79,7 +79,7 @@
             </div>
           </div>
           <div class="promotion__offer">
-            <div class="promotion__subject">
+            <div class="promotion__subject promotion__column--left">
               <p class="promotion__text">Экологически чистая пряжа,
                 ручная работа. Доступны в шести расцветках и трёх размерах.</p>
               <dl class="promotion__list">
@@ -96,8 +96,14 @@
                   <dd class="promotion__description">15 см</dd>
                 </div>
               </dl>
+              <div class="promotion__price promotion__column--left">Цена: 990 руб.</div>
+              <div class="promotion__order promotion__column--left">
+                <a class="promotion__link button button--transparent">
+                  Заказать
+                </a>
+              </div>
             </div>
-            <div class="promotion__image">
+            <div class="promotion__image promotion__column--right">
               <picture>
                 <!-- <source type="image/webp" media="(min-width: 1150px)" srcset=" 1x, 2x">
                 <source type="image/webp" media="(min-width: 772px)" srcset=" 1x, img/images-tablet/can-tablet@2x.webp 2x">
@@ -107,12 +113,6 @@
                 <img class="promotion__product" src="img/mobile/triple-set-mobile@1x.png" srcset="img/mobile/triple-set-mobile@2x.png 2x" width="260" height="315" alt="Еда для кота.">
               </picture>
             </div>
-            <div class="promotion__price">Цена: 990 руб.</div>
-            <div class="promotion__order">
-              <a class="promotion__link button button--transparent">
-                Заказать
-              </a>
-            </div>
           </div>
         </div>
       </section>
@@ -121,29 +121,36 @@
           <h2 class="features__title">Коротко о нас:</h2>
         </div>
         <ul class="features__list">
-          <li class="features__item features__item--material">
-            <h3 class="features__description features__description--material">Экологически <br>чистые материалы</h3>
-          </li>
-          <li class="features__item features__item--scandy">
-            <h3 class="features__description features__description--scandy">Скандинавский стиль <br>по российской цене</h3>
-          </li>
-          <li class="features__item features__item--likes">
-            <h3 class="features__description features__description--likes">Увеличивает лайки на фотографиях</h3>
-          </li>
-          <li class="features__item features__item--handmade">
-            <h3 class="features__description features__description--handmade">Связано вручную <br>с любовью и умилением</h3>
-          </li>
-          <li class="features__item features__item--support">
-            <h3 class="features__description features__description--support">Поддержка отечественного <br>производителя</h3>
-          </li>
-          <li class="features__item features__item--package">
-            <h3 class="features__description features__description--package">Поставляется <br>в подарочной упаковке</h3>
-          </li>
+          <div class="features__column features__column--left">
+            <li class="features__item features__item--material">
+              <h3 class="features__description features__description--material">Экологически <br>чистые материалы</h3>
+            </li>
+            <li class="features__item features__item--scandy">
+              <h3 class="features__description features__description--scandy">Скандинавский стиль <br>по российской цене</h3>
+            </li>
+            <li class="features__item features__item--likes">
+              <h3 class="features__description features__description--likes">Увеличивает лайки <br>на фотографиях</h3>
+            </li>
+          </div>
+          <div class="features__column features__column--right">
+            <li class="features__item features__item--handmade">
+              <h3 class="features__description features__description--handmade">Связано вручную <br>с любовью и умилением</h3>
+            </li>
+            <li class="features__item features__item--support">
+              <h3 class="features__description features__description--support">Поддержка отечественного <br>производителя</h3>
+            </li>
+            <li class="features__item features__item--package">
+              <h3 class="features__description features__description--package">Поставляется <br>в подарочной упаковке</h3>
+            </li>
+          </div>
         </ul>
       </section>
       <section class="review">
         <div class="review__slogan">
           <h2 class="review__title>">Отзывы</h2>
+        </div>
+        <div class="review__write">
+          <a class="review__button button button--transparent" href="#">Написать</a>
         </div>
         <div class="review-upload">
           <p class="review-upload__text">
@@ -161,9 +168,6 @@
           <button class="review__arrows__button button button--forward" type="button">
           </button>
         </div>
-        <div class="review__write">
-          <a class="review__button button button--transparent" href="#">Написать</a>
-        </div>
       </section>
       <section class="collaboration">
         <h2 class="collaboration__title visually-hidden">Давайте сотрудничать.</h2>
@@ -171,13 +175,15 @@
           <div class="collaboration__wrapper">
             <h2 class="collaboration__contacts">Контакты</h2>
           </div>
-          <div class="collaboration__data collaboration__data--email">
-            <p class="collaboration__item">e-mail:</p>
-            <a class="collaboration__description collaboration__description--email" href="#">info@mimimishkashop.ru</a>
-          </div>
-          <div class="collaboration__data collaboration__data--address">
-            <p class="collaboration__item">адрес:</p>
-            <p class="collaboration__description">г.Санкт-Петербург <br>ул. Большая Конюшенная <br>д. 19/8, офис 101</p>
+          <div class="collaboration__info">
+            <div class="collaboration__data collaboration__data--email">
+              <p class="collaboration__item">e-mail:</p>
+              <a class="collaboration__description collaboration__description--email" href="#">info@mimimishkashop.ru</a>
+            </div>
+            <div class="collaboration__data collaboration__data--address">
+              <p class="collaboration__item">адрес:</p>
+              <p class="collaboration__description">г.Санкт-Петербург <br>ул. Большая Конюшенная <br>д. 19/8, офис 101</p>
+            </div>
           </div>
         </div>
         <div class="map">
@@ -229,7 +235,8 @@
           </ul>
         </div>
         <div class="footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__text">Разработано</span>
             <span class="visually-hidden">Сайт академии.</span>
             <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="#63D1BB"/>

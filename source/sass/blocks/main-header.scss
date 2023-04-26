@@ -116,3 +116,24 @@
     margin-left: 380px;
   }
 }
+
+@media (max-width: $desktop-width) {
+  .main-header__wrapper {
+    margin: 0;
+  }
+
+  .main-header__logo {
+    position: absolute;
+    top: 9px;
+    left: 410px;
+    height: 72px;
+    width: 149px;
+    background: url("../img/desktop/mishka-logo-desktop.svg.svg") center no-repeat;
+    margin-left: 45px;
+    margin-right: 101px;
+  }
+
+  .main-header__item {
+    margin: 0;
+  }
+}

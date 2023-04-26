@@ -114,9 +114,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promotion::before {
-    background-image: url("../img/images-svg/zigzag-desktop.svg");
-    background-position: top center;
+  .promotion__wrapper::after {
+    background-image: url("../img/images-svg/zigzag-promotion.svg");
+    background-position: bottom center;
+    content: "";
+    height: 17px;
   }
 
   .promotion__title {
@@ -135,9 +137,86 @@
 
   .promotion__slogan {
     align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
     display: grid;
     grid-template-columns: 1fr 105px min-content;
+  }
+
+  .promotion__offer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 42px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .promotion__column--left {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .promotion__column--right {
+    float: right;
+  }
+
+  .promotion__image {
+    background-size: contain;
+    margin: 0;
+  }
+
+  .promotion__product {
+    width: 334px;
+    height: 404px;
+  }
+
+  .promotion__text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #444444;
+  }
+
+  .promotion__item {
+    display: grid;
+    grid-template-columns: 97px 195px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .promotion__attribute {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #444444;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .promotion__description {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #444444;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .promotion__price {
+    margin-top: 57px;
+    margin-bottom: 33px;
+    font-size: 20px;
+    line-height: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .promotion__order {
+    width: 292px;
+    min-height: 52px;
+    margin-bottom: 52px;
+  }
+
+  .promotion__link {
+    padding: 16px 86px;
   }
 }

@@ -75,3 +75,86 @@
     content: url("../img/images-svg/package-icon.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .features {
+    margin: 52px 50px 82px 50px;
+  }
+
+  .features__title {
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  .features__column--left {
+    float: left;
+    width: 50%;
+  }
+
+  .features__column--right {
+    float: right;
+    width: 50%;
+  }
+
+  .features__description {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .features__item--material::before {
+    position: absolute;
+    top: -56px;
+    left: 8px;
+    content: url("../img/images-svg/material-icon.svg");
+  }
+
+  .features__item--scandy::before {
+    position: absolute;
+    top: -56px;
+    left: 8px;
+    content: url("../img/images-svg/scandy-icon.svg");
+  }
+
+  .features__item--likes::before {
+    position: absolute;
+    top: -56px;
+    left: 8px;
+    content: url("../img/images-svg/likes-icon.svg");
+  }
+
+  .features__item--handmade::before {
+    position: absolute;
+    top: -56px;
+    left: 8px;
+    content: url("../img/images-svg/handmade-icon.svg");
+  }
+
+  .features__item--support::before {
+    position: absolute;
+    top: -56px;
+    left: 8px;
+    content: url("../img/images-svg/support-icon.svg");
+  }
+
+  .features__item--package::before {
+    position: absolute;
+    top: -56px;
+    left: 8px;
+    content: url("../img/images-svg/package-icon.svg");
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .features {
+    margin: 68px 225px 90px;
+  }
+}
+

@@ -28,3 +28,27 @@
     text-decoration: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .footer__part {
+    display: grid;
+    grid-template-columns: 102px 142px 181px;
+    column-gap: 122px;
+    margin: 51px 50px 58px 50px;
+  }
+
+  .footer__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .copyright__link {
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .copyright__text {
+    text-align: center;
+  }
+}

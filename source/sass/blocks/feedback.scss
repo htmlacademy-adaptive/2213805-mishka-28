@@ -10,3 +10,9 @@
   padding: 16px 37px;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    margin-bottom: 57px;
+  }
+}
