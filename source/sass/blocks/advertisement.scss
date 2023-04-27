@@ -152,7 +152,7 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .advertisement__wrapper {
     background-image: url("../img/desktop/hero-desktop@1x.png");
     background-size: contain;

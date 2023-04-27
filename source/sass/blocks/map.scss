@@ -8,6 +8,10 @@
   .map iframe {
     height: 454px;
   }
+
+  .map {
+    margin: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -21,4 +25,7 @@
       background-image: url("../img/tablet/map-tablet@2x.png");
     }
   }
+}
+
+@media (min-width: $desktop-width) {
 }

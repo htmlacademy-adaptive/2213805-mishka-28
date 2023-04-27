@@ -81,7 +81,19 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (min-width: $tablet-width) {
+  .main-nav__add {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .main-nav__add {
     display: flex;
     flex-direction: row;

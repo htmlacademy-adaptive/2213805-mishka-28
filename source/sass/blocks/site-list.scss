@@ -119,7 +119,7 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .site-list {
     display: flex;
     flex-direction: row;
