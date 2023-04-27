@@ -180,45 +180,45 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .review::after {
-//     background-image: none;
-//   }
+@media (min-width: $desktop-width) {
+  .review::after {
+    background-image: none;
+  }
 
-//   .review__title {
-//     font-family: "OpenSans", "Arial", sans-serif;
-//     font-weight: 700;
-//     font-size: 53px;
-//     line-height: 57px;
-//   }
+  .review__title {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
+  }
 
-//   .review__slogan {
-//     margin-left: 224px;
-//   }
+  .review__slogan {
+    margin-left: 224px;
+  }
 
-//   .review-upload__text {
-//     font-family: "OpenSans", "Arial", sans-serif;
-//     font-weight: 400;
-//     font-size: 17px;
-//     line-height: 30px;
-//     color: #444444;
-//     margin-left: 175px;
-//   }
+  .review-upload__text {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #444444;
+    margin-left: 175px;
+  }
 
-//   .review-upload__name {
-//     margin-left: 174px;
-//   }
+  .review-upload__name {
+    margin-left: 174px;
+  }
 
-//   .review-upload__email {
-//     margin-left: 174px;
-//   }
+  .review-upload__email {
+    margin-left: 174px;
+  }
 
-//   .review__arrows {
-//     // order: 4;
-//     display: flex;
-//     justify-content: space-between;
-//     width: 137px;
-//     margin-top: -40px;
-//     margin-left: 800px;
-//   }
-// }
+  .review__arrows {
+    // order: 4;
+    display: flex;
+    justify-content: space-between;
+    width: 137px;
+    margin-top: -40px;
+    margin-left: 800px;
+  }
+}

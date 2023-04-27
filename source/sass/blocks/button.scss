@@ -33,3 +33,10 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (min-width: $tablet-width) {
+  .btn--play {
+    top: 190px;
+    left: 280px
+  }
+}

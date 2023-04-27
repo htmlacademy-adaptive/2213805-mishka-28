@@ -6,11 +6,16 @@
   .desk-list__item--sale {
     display: none;
   }
+
+  .desk-list__item {
+    list-style-type: none;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
   .desk-list__item {
-    list-style-type: none;
+    display: flex;
   }
 
   .desk-list__item--arrivals {

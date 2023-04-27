@@ -64,3 +64,19 @@
   font-size: 18px;
   line-height: 16px;
 }
+
+@media (max-width: $mobile-width-only) {
+  .catalog-card__information {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-card__information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: $desktop-width) {
+}
