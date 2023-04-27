@@ -53,11 +53,11 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .footer__part {
-//     display: grid;
-//     grid-template-columns: 102px 142px 181px;
-//     column-gap: 312px;
-//     margin: 51px 50px 58px 50px;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .footer__part {
+    display: grid;
+    grid-template-columns: 102px 142px 181px;
+    column-gap: 312px;
+    margin: 51px 50px 58px 50px;
+  }
+}

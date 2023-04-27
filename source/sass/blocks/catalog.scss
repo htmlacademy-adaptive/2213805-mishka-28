@@ -14,8 +14,11 @@
 
 @media (min-width: $tablet-width) {
   .catalog__list {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 54px;
     list-style-type: none;
-    margin: 30px;
+    margin: 50px;
     padding: 0;
   }
 
@@ -28,10 +31,14 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: none;
+    column-gap: 51px;
     list-style-type: none;
-    margin: 30px;
+    margin: 50px;
     padding: 0;
   }
 

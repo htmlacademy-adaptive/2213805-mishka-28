@@ -69,6 +69,11 @@
   .catalog-card__information {
     display: block;
   }
+
+  .catalog-card__image {
+    width: 260px;
+    height: 195px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -76,7 +81,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .catalog-card__image {
+    width: 334px;
+    height: 334px;
+  }
 }
 
-@media (max-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+    .catalog-card__information {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .catalog-card__image {
+    width: 316px;
+    height: 462px;
+  }
 }

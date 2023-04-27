@@ -104,9 +104,51 @@
   }
 }
 
-@media (max-width: $desktop-width) {
-  // .manufacturing {
-  //   display: grid;
-  //   grid-template-columns: 1fr 1fr;
-  // }
+@media (min-width: $desktop-width) {
+  .manufacturing {
+    display: grid;
+    grid-template-columns: 682px 155px;
+    grid-template-rows: 152px 152px 152px;
+    column-gap: 79px;
+  }
+
+  .manufacturing__image {
+    width: 682px;
+    height: 455px;
+    background-size: cover;
+  }
+
+  .manufacturing__wrapper {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: -1;
+    grid-row-end: 1;
+  }
+
+  .manufacturing__text {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-left: 0;
+  }
+
+  .manufacturing__order {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .manufacturing__title {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .manufacturing__button {
+    width: 230px;
+    padding: 18px 29px;
+  }
 }
