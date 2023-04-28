@@ -47,10 +47,6 @@
     order: 1;
   }
 
-  .review__write {
-    order: 4;
-  }
-
   .review__title {
     font-size: 25px;
     line-height: 30px;
@@ -101,6 +97,7 @@
 
   .review__write {
     margin-bottom: 45px;
+    order: 4;
   }
 }
 
@@ -132,7 +129,6 @@
     background-repeat: no-repeat;
     background-position: left top;
     background-size: contain;
-    display: flex;
     align-items: center;
   }
 

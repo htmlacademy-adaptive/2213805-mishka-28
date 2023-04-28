@@ -143,10 +143,6 @@
   .promotion__column--right {
     float: none;
   }
-
-  .promotion__description {
-    margin: 0;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -264,10 +260,12 @@
     grid-template-columns: min-content 700px;
     column-gap: 43px;
   }
+
   .promotion__name {
     display: flex;
     order: 2;
   }
+
   .promotion__option {
     display: flex;
     order: 1;

@@ -300,9 +300,6 @@
   line-height: 16px;
 }
 
-@media (max-width: $mobile-width-only) {
-}
-
 @media (min-width: $tablet-width) {
   .application-form__group {
     border-top: none;
@@ -351,10 +348,6 @@
     background-color: #f1f1f1;
   }
 
-  .application-form__wrapper--details .application-form__title {
-    background-color: #ffffff;
-  }
-
   .application-form__wrapper--details {
     margin: 10px 50px 50px 217px;
     display: grid;
@@ -366,6 +359,7 @@
     .application-form__title {
       top: 30px;
       left: -170px;
+      background-color: #ffffff;
     }
 
     .application-form__label {
@@ -384,6 +378,10 @@
   }
 
   .application-form__field--email {
+    background-color: #f1f1f1;
+  }
+
+  .application-form__field--phone {
     background-color: #f1f1f1;
   }
 
@@ -460,4 +458,82 @@
 
 
 @media (min-width: $desktop-width) {
+  .application-form__title {
+    top: 15px;
+    left: 97px;
+    background-color: #f1f1f1;
+  }
+
+  .application-form__group-list--checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 80px;
+  }
+
+  .application-form__wrapper--details {
+    margin: 10px 225px 50px 227px;
+    display: grid;
+
+    .application-form__input {
+      flex-direction: row;
+    }
+
+    .application-form__title {
+      top: 30px;
+      left: -97px;
+    }
+
+    .application-form__label {
+      text-align: center;
+      margin-top: 20px;
+      margin-right: 27px;
+    }
+  }
+
+  .application-form__group--phone .application-form__title {
+    background-color: #f1f1f1;
+    top: 20px;
+    left: 130px;
+  }
+
+  .application-form__group--email .application-form__title {
+    background-color: #f1f1f1;
+    top: 20px;
+    left: -85px;
+  }
+
+  .application-form__group--add .application-form__title {
+    background-color: #ffffff;
+    top: 20px;
+    left: 130px;
+  }
+
+  .application-form__button {
+    padding: 18px 32px;
+    width: 230px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    order: 1;
+    margin: 0;
+    margin-left: 225px;
+  }
+
+  .application-form__input--phone {
+    margin: 24px 225px 20px 225px;
+    background-color: #f1f1f1;
+  }
+
+  .application-form__group--email {
+    margin: 24px 225px 20px 225px;
+    background-color: #f1f1f1;
+  }
+
+  .application-form__input--additional {
+    margin: 24px 225px 20px 225px;
+  }
+
+  .application-form__textarea {
+    width: 700px;
+  }
 }

@@ -152,15 +152,14 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .features {
-//     margin: 68px 225px 90px;
-//   }
+@media (min-width: $desktop-width) {
+  .features {
+    margin: 68px 225px 90px;
+  }
 
-//   .features__title {
-//     font-weight: 700;
-//     font-size: 53px;
-//     line-height: 57px;
-//   }
-// }
-
+  .features__title {
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
