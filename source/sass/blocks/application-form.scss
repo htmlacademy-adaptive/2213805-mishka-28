@@ -299,3 +299,165 @@
   font-size: 17px;
   line-height: 16px;
 }
+
+@media (max-width: $mobile-width-only) {
+}
+
+@media (min-width: $tablet-width) {
+  .application-form__group {
+    border-top: none;
+  }
+
+  .application-form__group-list {
+    margin: 0 100px 65px 219px;
+  }
+
+  .application-form__wrapper {
+    margin-top: 0;
+  }
+
+  .application-form__title {
+    top: 15px;
+    background-color: #f1f1f1;
+  }
+
+  .application-form__wrapper--type {
+    margin: 0 50px 0 50px;
+  }
+
+  .application-form__wrapper--type .application-form__title {
+    background-color: #ffffff;
+  }
+
+  .application-form__wrapper--colors .application-form__title {
+    top: 50px;
+  }
+
+  .application-form__group--checkbox {
+    margin: 0 50px;
+  }
+
+  .application-form__checkbox {
+    margin-top: 50px;
+  }
+
+  .application-form__group-list--checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+
+  .application-form__wrapper--colors {
+    background-color: #f1f1f1;
+  }
+
+  .application-form__wrapper--details .application-form__title {
+    background-color: #ffffff;
+  }
+
+  .application-form__wrapper--details {
+    margin: 10px 50px 50px 217px;
+    display: grid;
+
+    .application-form__input {
+      flex-direction: row;
+    }
+
+    .application-form__title {
+      top: 30px;
+      left: -170px;
+    }
+
+    .application-form__label {
+      text-align: center;
+      margin-top: 20px;
+      margin-right: 27px;
+    }
+  }
+
+  .application-form__wrapper--data {
+    background-color: #f1f1f1;
+  }
+
+  .application-form__group--phone {
+    background-color: #f1f1f1;
+  }
+
+  .application-form__field--email {
+    background-color: #f1f1f1;
+  }
+
+  .application-form__wrapper--data .application-form__title {
+    top: 20px;
+    left: 50px;
+    background-color: #ffffff;
+  }
+
+  .application-form__input--phone {
+    margin: 24px 50px 20px 217px;
+    background-color: #f1f1f1;
+  }
+
+  .application-form__group--email {
+    margin: 24px 50px 20px 217px;
+    background-color: #f1f1f1;
+  }
+
+  .application-form__group--phone .application-form__title {
+    background-color: #f1f1f1;
+  }
+
+  .application-form__group--email .application-form__title {
+    background-color: #f1f1f1;
+    top: 20px;
+    left: -160px;
+  }
+
+  .application-form__group--add .application-form__title {
+    background-color: #ffffff;
+    top: 20px;
+    left: 50px;
+  }
+
+  .application-form__input--additional {
+    margin: 24px 50px 20px 217px;
+  }
+
+  .application-form__textarea {
+    width: 501px;
+  }
+
+  .application-form__input {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .application-form__button {
+    padding: 18px 32px;
+    width: 230px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    order: 1;
+    margin: 0;
+    margin-left: 50px;
+  }
+
+  .application-form__notes {
+    order: 2;
+    margin: 0;
+    text-align: center;
+  }
+
+  .application-form__send {
+    margin: 53px 50px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+}
