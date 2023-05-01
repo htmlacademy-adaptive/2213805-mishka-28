@@ -2,9 +2,14 @@
   display: none;
 }
 
+.modal {
+  display: none;
+}
+
 .modal__content {
   min-height: 336px;
   width: 100%;
+  display: none;
 }
 
 .modal--open {

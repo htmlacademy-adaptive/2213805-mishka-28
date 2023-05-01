@@ -12,11 +12,12 @@
   }
 
   .footer__copyright {
-    padding: 29px 69px 31px;
+    // padding: 29px 69px 31px 69px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    // width: 182px;
   }
 
   .copyright__link {
@@ -26,6 +27,8 @@
     font-weight: 700;
     // margin-right: 25px;
     text-decoration: none;
+    text-align: center;
+    align-items: center;
   }
 }
 

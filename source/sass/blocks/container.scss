@@ -3,13 +3,16 @@
 
   @media (max-width: $mobile-width-only) {
     width: 320px;
+    padding: 30px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 772px;
+    width: 768px;
+    padding: 50px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1150px;
+    padding: 50px;
   }
 }
