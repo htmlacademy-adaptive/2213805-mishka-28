@@ -44,7 +44,6 @@
     justify-content: center;
     margin-top: 28px;
     margin-bottom: 26px;
-    margin-left: 76px;
   }
 
   .site-list__item--basket::before {
@@ -78,9 +77,11 @@
     // width: 20px;
     // height: 20px;
     order: 1;
-    margin-left: 352px;
+  }
+
+  .site-list__item--search {
+    margin-left: 298px;
     margin-top: 36px;
-    // margin: 36px 34px 33px 31px;
   }
 
   .site-list__item--basket {
@@ -130,14 +131,17 @@
 
   .site-list__item--basket {
     margin-left: 51px;
-    margin-right: 52px;
+    margin-right: 2px;
     margin-top: 32px;
     order: 4;
   }
 
   .site-list__item--search {
     order: 3;
+    margin-left: 158px;
+    margin-top: 36px;
   }
+
 
   .site-list__link--basket::before {
     position: absolute;

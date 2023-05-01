@@ -97,6 +97,7 @@
     margin-top: 25px;
     margin-bottom: 40px;
     color: #444444;
+    align-items: center;
   }
 
   .promotion__link {
@@ -128,17 +129,6 @@
     margin-left: 0;
     margin-right: 0;
   }
-
-  .promotion__column--left {
-    display: flex;
-    float: left;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .promotion__column--right {
-    float: none;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -165,8 +155,6 @@
 
   .promotion__slogan {
     align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
     display: grid;
     grid-template-columns: 1fr 105px min-content;
   }
@@ -175,24 +163,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 42px;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  .promotion__column--left {
-    display: flex;
-    float: left;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .promotion__column--right {
-    float: right;
   }
 
   .promotion__image {
     background-size: contain;
     margin: 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
   }
 
   .promotion__product {
@@ -257,6 +236,10 @@
     column-gap: 43px;
   }
 
+  .promotion__text {
+    padding-top: 30px;
+  }
+
   .promotion__name {
     display: flex;
     order: 2;
@@ -283,6 +266,7 @@
     column-gap: 58px;
     margin-left: 225px;
     margin-right: 50px;
+    margin-top: -50px;
   }
 
   .promotion__column--left {

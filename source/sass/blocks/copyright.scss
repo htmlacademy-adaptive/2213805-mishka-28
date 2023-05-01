@@ -23,9 +23,12 @@
   .copyright__link {
     text-align: center;
     text-decoration: none;
+    display: flex;
+    align-items: center;
   }
 
   .copyright__text {
     text-align: center;
+    margin-right: 28px;
   }
 }

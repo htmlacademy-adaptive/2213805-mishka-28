@@ -70,9 +70,11 @@
     background-image: url("../img/mobile/hero-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    background-color: #f9f9f9;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mobile/hero-mobile@2x.png");
@@ -114,6 +116,8 @@
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    background-position: center;
+    background-color: #f9f9f9;
     background-image: url("../img/tablet/hero-tablet@1x.png");
 
     @media (min-resolution: 2dppx) {
@@ -156,6 +160,8 @@
   .advertisement__wrapper {
     background-image: url("../img/desktop/hero-desktop@1x.png");
     background-size: contain;
+    background-position: center;
+    background-color: #f9f9f9;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/desktop/hero-desktop@2x.png");

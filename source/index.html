@@ -9,7 +9,7 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="main-header container">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html">
         </a>
@@ -79,9 +79,8 @@
             </div>
           </div>
           <div class="promotion__offer">
-            <div class="promotion__subject promotion__column--left">
               <p class="promotion__text">Экологически чистая пряжа,
-                ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+                <br>ручная работа. Доступны в шести расцветках и трёх размерах.</p>
               <dl class="promotion__list">
                 <div class="promotion__item">
                   <dt class="promotion__attribute">Цвет:</dt>
@@ -96,32 +95,30 @@
                   <dd class="promotion__description">15 см</dd>
                 </div>
               </dl>
-              <div class="promotion__price promotion__column--left">Цена: 990 руб.</div>
-              <div class="promotion__order promotion__column--left">
+              <div class="promotion__image">
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1150px)" srcset=" 1x, 2x">
+                  <source type="image/webp" media="(min-width: 772px)" srcset=" 1x, img/images-tablet/can-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset=" 1x,  2x"> -->
+                  <source media="(min-width: 1150px)" srcset="img/desktop/triple-set-desktop@1x.png 1x, img/desktop/triple-set-desktop@2x.png 2x">
+                  <source media="(min-width: 772px)" srcset="img/tablet/triple-set-tablet@1x.png 1x, img/tablet/triple-set-tablet@2x.png 2x">
+                  <img class="promotion__product" src="img/mobile/triple-set-mobile@1x.png" srcset="img/mobile/triple-set-mobile@2x.png 2x" width="260" height="315" alt="Еда для кота.">
+                </picture>
+              </div>
+              <div class="promotion__price">Цена: 990 руб.</div>
+              <div class="promotion__order">
                 <a class="promotion__link button button--transparent">
                   Заказать
                 </a>
               </div>
-            </div>
-            <div class="promotion__image promotion__column--right">
-              <picture>
-                <!-- <source type="image/webp" media="(min-width: 1150px)" srcset=" 1x, 2x">
-                <source type="image/webp" media="(min-width: 772px)" srcset=" 1x, img/images-tablet/can-tablet@2x.webp 2x">
-                <source type="image/webp" srcset=" 1x,  2x"> -->
-                <source media="(min-width: 1150px)" srcset="img/desktop/triple-set-desktop@1x.png 1x, img/desktop/triple-set-desktop@2x.png 2x">
-                <source media="(min-width: 772px)" srcset="img/tablet/triple-set-tablet@1x.png 1x, img/tablet/triple-set-tablet@2x.png 2x">
-                <img class="promotion__product" src="img/mobile/triple-set-mobile@1x.png" srcset="img/mobile/triple-set-mobile@2x.png 2x" width="260" height="315" alt="Еда для кота.">
-              </picture>
-            </div>
           </div>
         </div>
       </section>
-      <section class="features">
+      <section class="features container">
         <div class="features__slogan">
           <h2 class="features__title">Коротко о нас:</h2>
         </div>
         <ul class="features__list">
-          <div class="features__column features__column--left">
             <li class="features__item features__item--material">
               <h3 class="features__description features__description--material">Экологически <br>чистые материалы</h3>
             </li>
@@ -131,8 +128,6 @@
             <li class="features__item features__item--likes">
               <h3 class="features__description features__description--likes">Увеличивает лайки <br>на фотографиях</h3>
             </li>
-          </div>
-          <div class="features__column features__column--right">
             <li class="features__item features__item--handmade">
               <h3 class="features__description features__description--handmade">Связано вручную <br>с любовью и умилением</h3>
             </li>
@@ -142,13 +137,12 @@
             <li class="features__item features__item--package">
               <h3 class="features__description features__description--package">Поставляется <br>в подарочной упаковке</h3>
             </li>
-          </div>
         </ul>
       </section>
       <section class="review">
         <div class="review__container container">
           <div class="review__slogan">
-            <h2 class="review__title>">Отзывы</h2>
+            <h2 class="review__title">Отзывы</h2>
           </div>
           <div class="review__write">
             <a class="review__button button button--transparent" href="#">Написать</a>

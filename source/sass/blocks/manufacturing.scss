@@ -1,5 +1,4 @@
 .manufacturing {
-  margin: 30px 30px 58px 30px;
   border: 1px solid #ececec;
   display: flex;
   align-items: center;
@@ -105,12 +104,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  //сделать див и перенести все с секции 
   .manufacturing {
     display: grid;
     grid-template-columns: 682px 155px;
     grid-template-rows: 152px 152px 152px;
     column-gap: 79px;
-    margin: 0 50px 105px;
   }
 
   .manufacturing__image {
