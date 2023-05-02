@@ -49,11 +49,11 @@
       </div>
     </header>
     <main class="catalog">
-        <div class="intro container">
+        <div class="intro">
             <h1 class="intro__title intro__title--catalog">Каталог товаров</h1>
         </div>
         <section class="catalog__options">
-            <div class="catalog__wrapper">
+            <div class="catalog__wrapper container">
                 <ul class="catalog__list">
                     <li class="catalog__card catalog-card">
                         <div class="catalog-card__information">
@@ -120,25 +120,27 @@
                 </ul>
             </div>
         </section>
-        <section class="manufacturing">
-          <div class="manufacturing__title manufacturing__column--right">
-            <h2 class="manufacturing__slogan">Процесс производства</h2>
-          </div>
-          <div class="manufacturing__wrapper manufacturing__column--left">
-              <picture>
-                <source media="(min-width: 1150px)" srcset="img/desktop/video-desktop@1x.png 1x, img/desktop/video-desktop@2x.png 2x">
-                <source media="(min-width: 772px)" srcset="img/tablet/video-tablet@1x.png 1x, img/tablet/video-tablet@2x.png 2x">
-                  <img class="manufacturing__image" src="img/mobile/video-mobile@1x.png" srcset="img/mobile/video-mobile@2x.png 2x" width="260" height="150" alt="Фото игрушки зайчика.">
-              </picture>
-              <button class="btn btn--play">
-              </button>
-          </div>
-          <div class="manufacturing__text manufacturing__column--right">
-            <p class="manufacturing__description">
-              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          </div>
-          <div class="manufacturing__order manufacturing__column--right">
-            <a class="manufacturing__button button button--transparent" href="form.html">Сделать заказ</a>
+        <section class="manufacturing container">
+          <div class="manufacturing__container">
+            <div class="manufacturing__title manufacturing__column--right">
+              <h2 class="manufacturing__slogan">Процесс производства</h2>
+            </div>
+            <div class="manufacturing__wrapper manufacturing__column--left">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/desktop/video-desktop@1x.png 1x, img/desktop/video-desktop@2x.png 2x">
+                  <source media="(min-width: 772px)" srcset="img/tablet/video-tablet@1x.png 1x, img/tablet/video-tablet@2x.png 2x">
+                    <img class="manufacturing__image" src="img/mobile/video-mobile@1x.png" srcset="img/mobile/video-mobile@2x.png 2x" width="260" height="150" alt="Фото игрушки зайчика.">
+                </picture>
+                <button class="btn btn--play">
+                </button>
+            </div>
+            <div class="manufacturing__text manufacturing__column--right">
+              <p class="manufacturing__description">
+                По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            </div>
+            <div class="manufacturing__order manufacturing__column--right">
+              <a class="manufacturing__button button button--transparent" href="form.html">Сделать заказ</a>
+            </div>
           </div>
         </section>
     </main>
