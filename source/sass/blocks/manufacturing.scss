@@ -1,8 +1,8 @@
-.manufacturing {
-  border: 1px solid #ececec;
+.manufacturing__container {
   display: flex;
   align-items: center;
   flex-direction: column;
+  border: 1px solid #ececec;
 }
 
 .manufacturing__title {
@@ -56,8 +56,9 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .manufacturing {
+  .manufacturing__container {
     display: block;
+    margin-bottom: 58px;
   }
 
   .manufacturing__order {
@@ -67,10 +68,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .manufacturing {
+  .manufacturing__container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-bottom: 64px;
   }
 
   .manufacturing__wrapper {
@@ -104,12 +106,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  //сделать див и перенести все с секции 
-  .manufacturing {
+  //сделать див и перенести все с секции
+  .manufacturing__container {
     display: grid;
     grid-template-columns: 682px 155px;
     grid-template-rows: 152px 152px 152px;
     column-gap: 79px;
+    border: 1px solid #ececec;
+    margin-bottom: 105px;
   }
 
   .manufacturing__image {

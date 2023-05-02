@@ -17,6 +17,11 @@
     text-align: center;
     align-items: center;
   }
+
+  .copyright__text {
+    text-align: center;
+    margin-right: 27px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -32,3 +37,7 @@
     margin-right: 28px;
   }
 }
+
+@media (min-width: $desktop-width) {
+}
+

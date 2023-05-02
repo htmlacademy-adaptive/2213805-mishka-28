@@ -188,7 +188,7 @@
 
 @media (min-width: $desktop-width) {
   .review::after {
-    background-image: none;
+    height: 23px;
   }
 
   .review__title {

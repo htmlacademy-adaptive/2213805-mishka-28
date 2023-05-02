@@ -19,10 +19,16 @@
     background-image: url("../img/tablet/map-tablet@1x.png");
     height: 457px;
     width: 768px;
-    // width: 100%;
+    width: 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/tablet/map-tablet@2x.png");
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    width: 100%;
   }
 }
