@@ -69,6 +69,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0;
+    padding: 0;
   }
 
   .site-list__link--search {
@@ -80,13 +81,13 @@
   }
 
   .site-list__item--search {
-    margin-left: 298px;
+    margin-left: 390px;
     margin-top: 36px;
   }
 
   .site-list__item--basket {
     margin-left: 80px;
-    margin-right: 70px;
+    margin-right: 0;
     margin-top: 32px;
     order: 2;
   }
@@ -130,7 +131,7 @@
   }
 
   .site-list__item--basket {
-    margin-left: 51px;
+    margin-left: 80px;
     margin-right: 2px;
     margin-top: 32px;
     order: 4;
@@ -138,7 +139,7 @@
 
   .site-list__item--search {
     order: 3;
-    margin-left: 158px;
+    margin-left: 120px;
     margin-top: 36px;
   }
 
@@ -165,8 +166,6 @@
     content: url("../img/images-svg/search.svg");
     z-index: 1;
     margin: 0;
-    margin-left: 5px;
-    margin-top: 36px;
   }
 
   .site-list__link--basket {

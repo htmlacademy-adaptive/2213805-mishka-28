@@ -6,6 +6,7 @@
 
 .order__slogan {
   display: flex;
+  justify-content: center;
 }
 
 .order__content {
@@ -18,10 +19,6 @@
     font-size: 13px;
     line-height: 24px;
     padding-right: 0;
-  }
-
-  .order__slogan {
-    margin: 0 0 37px 0;
   }
 
   .order__content {
@@ -41,7 +38,7 @@
   }
 
   .order__slogan {
-    margin: 0 50px 37px 50px;
+    justify-content: center;
   }
 
   .order__content {
@@ -53,12 +50,12 @@
   .order__text {
     font-size: 17px;
     line-height: 30px;
+    padding: 20px 120px;
   }
 
   .order__slogan {
     margin-top: 98px;
-    margin-left: 225px;
-    margin-right: 223px;
+    justify-content: center;
   }
 
   .order__content {

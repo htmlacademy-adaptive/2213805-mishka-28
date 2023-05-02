@@ -19,11 +19,15 @@
     background-image: url("../img/tablet/map-tablet@1x.png");
     height: 457px;
     width: 768px;
-    width: 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/tablet/map-tablet@2x.png");
     }
+  }
+
+  .map {
+    width: 100%;
+    display: flex;
   }
 }
 
