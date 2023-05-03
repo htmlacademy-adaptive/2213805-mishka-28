@@ -1,5 +1,13 @@
 .site-list__item {
   list-style-type: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list {
