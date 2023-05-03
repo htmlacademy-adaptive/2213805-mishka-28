@@ -1,9 +1,8 @@
-.manufacturing {
-  margin: 30px 30px 58px 30px;
-  border: 1px solid #ececec;
+.manufacturing__container {
   display: flex;
   align-items: center;
   flex-direction: column;
+  border: 1px solid #ececec;
 }
 
 .manufacturing__title {
@@ -54,4 +53,106 @@
   width: 192px;
   min-height: 52px;
   margin-bottom: 33px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .manufacturing__container {
+    display: block;
+    margin-bottom: 58px;
+  }
+
+  .manufacturing__order {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .manufacturing__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+
+  .manufacturing__wrapper {
+    order: 1;
+  }
+
+  .manufacturing__image {
+    width: 668px;
+    height: 455px;
+    background-size: cover;
+  }
+
+  .manufacturing__title {
+    order: 2;
+  }
+
+  .manufacturing__text {
+    order: 3;
+  }
+
+  .manufacturing__order {
+    order: 4;
+  }
+
+  .manufacturing__button {
+    padding: 18px 207px;
+    width: 584px;
+    min-height: 52px;
+    margin-bottom: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  //сделать див и перенести все с секции
+  .manufacturing__container {
+    display: grid;
+    grid-template-columns: 682px 155px;
+    grid-template-rows: 152px 152px 152px;
+    column-gap: 79px;
+    border: 1px solid #ececec;
+    margin-bottom: 105px;
+  }
+
+  .manufacturing__image {
+    width: 682px;
+    height: 455px;
+    background-size: cover;
+  }
+
+  .manufacturing__wrapper {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: -1;
+    grid-row-end: 1;
+  }
+
+  .manufacturing__text {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-left: 0;
+  }
+
+  .manufacturing__order {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .manufacturing__title {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .manufacturing__button {
+    width: 230px;
+    padding: 18px 29px;
+  }
 }

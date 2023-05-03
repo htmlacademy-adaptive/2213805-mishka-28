@@ -15,4 +15,37 @@
   top: 37px;
   left: 80px;
   border: none;
+  background-image: url("../img/images-svg/play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 101px;
+  height: 77px;
+}
+
+.button--forward {
+  background-image: url("../img/images-svg/arrow-forward.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button--back {
+  background-image: url("../img/images-svg/arrow-back.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .btn--play {
+    top: 190px;
+    left: 280px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--transparent {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+  }
 }

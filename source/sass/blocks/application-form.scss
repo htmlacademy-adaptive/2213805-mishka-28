@@ -1,20 +1,20 @@
 .application-form {
   display: flex;
   flex-direction: column;
-  margin: 17px 0 25px 0;
+  // margin: 17px 0 25px 0;
 }
 
 .application-form__wrapper {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .application-form__group {
   padding: 0;
-  // margin-right: 29px;
   border: none;
   position: relative;
   list-style-type: none;
-  border-top: 1px solid #62D1BA;
+  border-top: 1px solid #62d1ba;
 }
 
 .application-form__group-list {
@@ -39,7 +39,7 @@
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #63D1BB;
+  color: #63d1bb;
   position: absolute;
   top: -8px;
   left: 0;
@@ -142,7 +142,7 @@
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background-color: #63D1BB;
+    background-color: #63d1bb;
   }
 }
 
@@ -187,8 +187,8 @@
     content: "";
     position: absolute;
     display: none;
-    top: 10px;
-    left: 5px;
+    top: 4px;
+    left: 12px;
     width: 33%;
     height: 57%;
     border: solid #000000;
@@ -199,20 +199,10 @@
   .application-form__checkbox .application-form__checkmark {
     width: 30px;
     height: 30px;
-  }
-
-  .application-form__checkbox .application-form__checkmark {
     position: absolute;
     left: 0;
     top: -5px;
-    height: 30px;
-    width: 30px;
     border: 1px solid #cdcdcd;
-  }
-
-  .application-form__checkmark::after {
-    top: 1px;
-    left: 8px;
   }
 
   .application-form__input-checkbox:checked ~ .application-form__checkmark {
@@ -267,6 +257,7 @@
   font-size: 17px;
   line-height: 18px;
   color: #000000;
+  border: none;
   padding-top: 17px;
   padding-bottom: 17px;
   border-bottom: 2px solid #444444;
@@ -304,7 +295,263 @@
   width: 260px;
   min-height: 52px;
   margin-bottom: 33px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: 17px;
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .application-form__group {
+    border-top: none;
+  }
+
+  .application-form__group-list {
+    margin: 0 100px 65px 219px;
+  }
+
+  .application-form__wrapper {
+    margin-top: 0;
+  }
+
+  .application-form__title {
+    top: 15px;
+    background-color: #f1f1f1;
+  }
+
+  .application-form__wrapper--type {
+    margin: 0 50px 0 50px;
+  }
+
+  .application-form__wrapper--type .application-form__title {
+    background-color: #ffffff;
+  }
+
+  .application-form__wrapper--colors .application-form__title {
+    top: 50px;
+  }
+
+  .application-form__group--checkbox {
+    justify-content: center;
+  }
+
+  .application-form__checkbox {
+    margin-top: 50px;
+  }
+
+  .application-form__group-list--checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+
+  .application-form__wrapper--colors {
+    background-color: #f1f1f1;
+  }
+
+  .application-form__wrapper--details {
+    // margin: 10px 50px 50px 217px;
+    display: grid;
+
+    .application-form__input {
+      flex-direction: row;
+    }
+
+    .application-form__title {
+      top: 30px;
+      left: -170px;
+      background-color: #ffffff;
+    }
+
+    .application-form__label {
+      text-align: center;
+      margin-top: 20px;
+      margin-right: 27px;
+    }
+  }
+
+  .application-form__wrapper--data {
+    background-color: #f1f1f1;
+  }
+
+  .application-form__group--phone {
+    background-color: #f1f1f1;
+  }
+
+  .application-form__field--email {
+    background-color: #f1f1f1;
+  }
+
+  .application-form__field--phone {
+    background-color: #f1f1f1;
+  }
+
+  .application-form__wrapper--data .application-form__title {
+    top: 20px;
+    left: 50px;
+    background-color: #ffffff;
+  }
+
+  .application-form__input--phone {
+    // margin: 24px 50px 20px 217px;
+    background-color: #f1f1f1;
+  }
+
+  .application-form__group--email {
+    // margin: 24px 50px 20px 217px;
+    background-color: #f1f1f1;
+  }
+
+  .application-form__group--phone .application-form__title {
+    background-color: #f1f1f1;
+  }
+
+  .application-form__group--email .application-form__title {
+    background-color: #f1f1f1;
+    top: 20px;
+    left: -160px;
+  }
+
+  .application-form__group--add .application-form__title {
+    background-color: #ffffff;
+    top: 20px;
+    left: 50px;
+  }
+
+  .application-form__input--additional {
+    margin: 24px 50px 20px 217px;
+  }
+
+  .application-form__textarea {
+    width: 501px;
+  }
+
+  .application-form__input {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .application-form__button {
+    padding: 18px 32px;
+    width: 230px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    order: 1;
+    margin: 0;
+  }
+
+  .application-form__notes {
+    order: 2;
+    margin: 0;
+    text-align: center;
+  }
+
+  .application-form__send {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .application-form__title {
+    position: absolute;
+    top: 15px;
+    left: 80px;
+    background-color: #f1f1f1;
+  }
+
+  .application-form__group {
+    margin-left: 190px;
+  }
+
+  .application-form__group--radiobutton {
+    margin-left: 0;
+  }
+
+  .application-form__group-list--checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 80px;
+  }
+
+  .application-form__group--details {
+    display: grid;
+
+    .application-form__input {
+      flex-direction: row;
+    }
+
+    .application-form__title {
+      top: 30px;
+    }
+
+    .application-form__label {
+      text-align: center;
+      margin-top: 20px;
+      margin-right: 27px;
+    }
+  }
+
+  .application-form__input--phone {
+    margin-left: 190px;
+  }
+
+  .application-form__input--email {
+    margin-left: 190px;
+  }
+
+  .application-form__group--phone .application-form__title {
+    background-color: #f1f1f1;
+    top: 20px;
+    left: 130px;
+  }
+
+  .application-form__group--email .application-form__title {
+    background-color: #f1f1f1;
+    top: 20px;
+    left: 130px;
+  }
+
+  .application-form__group--add {
+    margin-left: 0;
+  }
+
+  .application-form__group--add .application-form__title {
+    background-color: #ffffff;
+    top: 20px;
+    left: 80px;
+  }
+
+  .application-form__button {
+    padding: 18px 32px;
+    width: 230px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    order: 1;
+    margin-left: 185px;
+  }
+
+  // .application-form__input--phone {
+  //   background-color: #f1f1f1;
+  // }
+
+  // .application-form__group--email {
+  //   background-color: #f1f1f1;
+  // }
+
+  .application-form__input--additional {
+    margin: 24px 50px 20px 190px;
+  }
+
+  .application-form__textarea {
+    width: 700px;
+  }
+
+  .application-form__notes {
+    margin-right: 185px;
+  }
 }

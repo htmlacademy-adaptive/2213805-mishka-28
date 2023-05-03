@@ -20,7 +20,7 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 30px;
-  color:#444444;
+  color: #444444;
   position: relative;
   margin-bottom: 41px;
 }
@@ -36,6 +36,13 @@
   line-height: 24px;
 }
 
+.catalog-card__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 27px;
+}
+
 .catalog-card__price {
   font-weight: 700;
   font-size: 15px;
@@ -45,15 +52,51 @@
   margin-top: 0;
 }
 
-.catalog-card__price::after {
-  position: absolute;
-  top: 0;
-  left: 185px;
-  content: url("../img/images-svg/basket-img.svg");
+.catalog-card__open {
+  background-image: url("../img/images-svg/basket-img.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 19px;
 }
 
 .catalog-card__button {
   font-weight: 700;
   font-size: 18px;
   line-height: 16px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .catalog-card__information {
+    display: block;
+  }
+
+  .catalog-card__image {
+    width: 260px;
+    height: 195px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-card__information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .catalog-card__image {
+    width: 334px;
+    height: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-card__information {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .catalog-card__image {
+    width: 316px;
+    height: 462px;
+  }
 }

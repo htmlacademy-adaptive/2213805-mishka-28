@@ -1,6 +1,4 @@
 .main-header {
-  display: flex;
-  flex-direction: row;
   background-color: #ffffff;
   color: #000000;
   justify-content: center;
@@ -18,15 +16,24 @@
   }
 }
 
+.main-header__text {
+  color: #444444;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+
 @media (max-width: $mobile-width-only) {
   .main-header {
-    position: relative;
-    flex-direction: column;
+    min-height: 79px;
   }
 
   .main-header__wrapper {
     display: flex;
     flex-direction: row;
+    position: relative;
   }
 
   .main-header__logo {
@@ -34,14 +41,17 @@
     width: 86px;
     background-image: url("../img/images-svg/logo-mobile.svg");
     background-repeat: no-repeat;
-    margin-left: 116px;
-    margin-right: 67px;
-    margin-top: 22px;
-    margin-bottom: 22px;
+    position: absolute;
+    top: 22px;
+    left: 86px;
+  }
+
+  .main-header__item {
+    display: none;
   }
 
   .main-header__toggle {
-    position: relative;
+    position: absolute;
     background: url("../img/images-svg/menu-opening.svg") center no-repeat;
     background-color: transparent;
     top: 32px;
@@ -69,10 +79,13 @@
 @media (min-width: $tablet-width) {
   .main-header {
     height: 89px;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .main-header__wrapper {
-    display: flex;
+    border-right: #444444;
   }
 
   .main-header__toggle {
@@ -80,8 +93,44 @@
   }
 
   .main-header__logo {
+    position: absolute;
+    top: 26px;
+    left: 50px;
     height: 46px;
     width: 113px;
     background: url("../img/tablet/mishka-logo-tablet.svg") center no-repeat;
+  }
+
+  .main-header__item {
+    display: flex;
+    justify-content: right;
+    margin-top: -40px;
+    margin-left: 380px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    position: relative;
+  }
+
+  .main-header__wrapper {
+    margin: 0;
+  }
+
+  .main-header__logo {
+    position: absolute;
+    top: 9px;
+    left: 470px;
+    height: 72px;
+    width: 149px;
+    background: url("../img/desktop/mishka-logo-desktop.svg") center no-repeat;
+    margin-left: 45px;
+    margin-right: 101px;
+  }
+
+  .main-header__item {
+    margin-top: -60px;
+    margin-left: 500px;
   }
 }

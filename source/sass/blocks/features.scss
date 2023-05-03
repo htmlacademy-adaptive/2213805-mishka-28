@@ -28,50 +28,112 @@
   margin-top: 83px;
 }
 
-@media (max-width: $mobile-width-only) {
+.features__item--material::before {
+  position: absolute;
+  top: -56px;
+  left: 8px;
+  content: url("../img/images-svg/material-icon.svg");
+}
+
+.features__item--scandy::before {
+  position: absolute;
+  top: -56px;
+  left: 8px;
+  content: url("../img/images-svg/scandy-icon.svg");
+}
+
+.features__item--likes::before {
+  position: absolute;
+  top: -56px;
+  left: 8px;
+  content: url("../img/images-svg/likes-icon.svg");
+}
+
+.features__item--handmade::before {
+  position: absolute;
+  top: -56px;
+  left: 8px;
+  content: url("../img/images-svg/handmade-icon.svg");
+}
+
+.features__item--support::before {
+  position: absolute;
+  top: -56px;
+  left: 8px;
+  content: url("../img/images-svg/support-icon.svg");
+}
+
+.features__item--package::before {
+  position: absolute;
+  top: -56px;
+  left: 8px;
+  content: url("../img/images-svg/package-icon.svg");
+}
+
+@media (min-width: $tablet-width) {
   .features {
-    margin: 31px 30px 58px;
+    margin-bottom: 83px;
   }
 
-  .features__item--material::before {
-    position: absolute;
-    top: -56px;
-    left: 8px;
-    content: url("../img/images-svg/material-icon.svg");
+  .features__title {
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
   }
 
-  .features__item--scandy::before {
-    position: absolute;
-    top: -56px;
-    left: 8px;
-    content: url("../img/images-svg/scandy-icon.svg");
+  .features__list {
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
   }
 
-  .features__item--likes::before {
-    position: absolute;
-    top: -56px;
-    left: 8px;
-    content: url("../img/images-svg/likes-icon.svg");
+  .features__description {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
   }
 
-  .features__item--handmade::before {
-    position: absolute;
-    top: -56px;
-    left: 8px;
-    content: url("../img/images-svg/handmade-icon.svg");
+  .features__item--scandy {
+    order: 3;
   }
 
-  .features__item--support::before {
-    position: absolute;
-    top: -56px;
-    left: 8px;
-    content: url("../img/images-svg/support-icon.svg");
+  .features__item--likes {
+    order: 5;
   }
 
-  .features__item--package::before {
-    position: absolute;
-    top: -56px;
-    left: 8px;
-    content: url("../img/images-svg/package-icon.svg");
+  .features__item--support {
+    order: 4;
+  }
+
+  .features__item--package {
+    order: 6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  // .features {
+  //   margin: 68px 225px 90px;
+  // }
+
+  .features__title {
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .features__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 785px;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 85px;
+  }
+
+  .features__slogan {
+    margin-left: 225px;
   }
 }

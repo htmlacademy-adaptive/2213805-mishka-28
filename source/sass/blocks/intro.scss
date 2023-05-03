@@ -16,6 +16,12 @@
 //   padding-bottom: 73px;
 // }
 
+@media (max-width: $mobile-width-only) {
+  .intro::after {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .intro__title {
     font-size: 43px;
@@ -23,13 +29,23 @@
     padding-top: 101px;
     padding-bottom: 75px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .intro__title {
-    font-size: 53px;
-    line-height: 57px;
-    padding-top: 102px;
-    padding-bottom: 96px;
+  .intro::after {
+    display: block;
+    background-image: url("../img/images-svg/zigzag-desktop.svg");
+    background-position: bottom center;
+    content: "";
+    height: 24px;
+    width: 100%;
+    margin-top: -50px;
   }
 }
+
+// @media (min-width: $desktop-width) {
+//   .intro__title {
+//     font-size: 53px;
+//     line-height: 57px;
+//     padding-top: 102px;
+//     padding-bottom: 96px;
+//   }
+// }
