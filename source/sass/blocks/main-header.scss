@@ -1,6 +1,9 @@
 .main-header {
   background-color: #ffffff;
   color: #000000;
+}
+
+.main-header__part {
   justify-content: center;
 }
 
@@ -26,7 +29,7 @@
 
 
 @media (max-width: $mobile-width-only) {
-  .main-header {
+  .main-header__part {
     min-height: 79px;
   }
 
@@ -77,7 +80,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-header {
+  .main-header__part {
     height: 89px;
     position: relative;
     flex-direction: row;
@@ -110,7 +113,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-header {
+  .main-header__part {
     position: relative;
   }
 

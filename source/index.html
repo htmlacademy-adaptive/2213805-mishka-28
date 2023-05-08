@@ -11,42 +11,44 @@
     <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
   </head>
   <body class="page__body">
-    <header class="main-header container">
-      <div class="main-header__wrapper">
-        <a class="main-header__logo" href="index.html">
-        </a>
-        <button class="main-header__toggle main-header__toggle--nojs" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--catalog">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item site-list__item--order">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item site-list__item--search">
-            <a class="site-list__link site-list__link--search" href="#">
-              <span class="site-list__text">Поиск по сайту</span>
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--basket">
-            <a class="site-list__link site-list__link--basket" href="form.html">Корзина: пока пуста</a>
-          </li>
-        </ul>
-        <ul class="main-nav__add desk-list">
-          <li class="desk-list__item desk-list__item--arrivals">
-            <a class="desk-list__link" href="catalog.html">Новые поступления</a>
-          </li>
-          <li class="desk-list__item desk-list__item--sale">
-            <a class="desk-list__link" href="catalog.html">Распродажа</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="main-header__item">
-        <p class="main-header__text">Бесплатная доставка по России</p>
+    <header class="main-header">
+      <div class="main-header__part container">
+        <div class="main-header__wrapper">
+          <a class="main-header__logo" href="index.html">
+          </a>
+          <button class="main-header__toggle main-header__toggle--nojs" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--catalog">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item site-list__item--order">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item site-list__item--search">
+              <a class="site-list__link site-list__link--search" href="#">
+                <span class="site-list__text">Поиск по сайту</span>
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--basket">
+              <a class="site-list__link site-list__link--basket" href="form.html">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__add desk-list">
+            <li class="desk-list__item desk-list__item--arrivals">
+              <a class="desk-list__link" href="catalog.html">Новые поступления</a>
+            </li>
+            <li class="desk-list__item desk-list__item--sale">
+              <a class="desk-list__link" href="catalog.html">Распродажа</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header__item">
+          <p class="main-header__text">Бесплатная доставка по России</p>
+        </div>
       </div>
     </header>
     <main class="main-container">
@@ -57,10 +59,10 @@
             <h2 class="advertisement__title">Милые штуки <br>ручной <br>работы для дома</h2>
           </div>
           <div class="advertisement__container">
-            <a class="advertisement__features advertisement__features--light" href="catalog.html">
+            <a class="advertisement__features advertisement__features--light container" href="catalog.html">
               <p class="advertisement__name">Предметы интерьера</p>
             </a>
-            <a class="advertisement__features advertisement__features--dark" href="catalog.html">
+            <a class="advertisement__features advertisement__features--dark container" href="catalog.html">
               <p class="advertisement__name">Детские игрушки</p>
             </a>
           </div>
@@ -247,31 +249,51 @@
         </div>
       </div>
     </footer>
-    <div class="modal modal--open modal--close">
-      <section class="modal__content">
+
+    <div class="modal modal--close">
+      <section class="modal-container modal-container--open">
         <h2 class="modal__title">Добавить в корзину</h2>
-        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="modal-form__wrapper container">
-            <h3 class="modal-form__description">Выберите размер:</h3>
-            <ul class="modal-form__list">
-              <li class="modal-form__option">
-                <a class="modal-form__link">
-                  <p class="modal-form__text">S</p>
-                </a>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="modal__form-group">
+            <legend class="modal__legend">Выберите размер:</legend>
+            <ul class="modal__list">
+              <li class="modal__item">
+                <label class="modal__label">
+                  <input
+                    class="modal__input"
+                    type="radio"
+                    name="size"
+                    value="S"
+                    checked
+                  />
+                  S
+                </label>
               </li>
-              <li class="modal-form__option">
-                <a class="modal-form__link">
-                  <p class="modal-form__text">M</p>
-                </a>
+              <li class="modal__item">
+                <label class="modal__label">
+                  <input
+                    class="modal__input"
+                    type="radio"
+                    name="size"
+                    value="M"
+                  />
+                  M
+                </label>
               </li>
-              <li class="modal-form__option">
-                <a class="modal-form__link">
-                  <p class="modal-form__text">L</p>
-                </a>
+              <li class="modal__item">
+                <label class="modal__label">
+                  <input
+                    class="modal__input"
+                    type="radio"
+                    name="size"
+                    value="L"
+                  />
+                  L
+                </label>
               </li>
             </ul>
-            <a class="modal-form__button button button--green">Добавить</a>
-          </div>
+          </fieldset>
+          <button class="modal__submit button button--secondary" type="submit">Добавить</button>
         </form>
       </section>
     </div>
