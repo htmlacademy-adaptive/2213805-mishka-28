@@ -40,13 +40,14 @@
   }
 
   .main-header__logo {
-    height: 35px;
-    width: 86px;
-    background-image: url("../img/images-svg/logo-mobile.svg");
-    background-repeat: no-repeat;
     position: absolute;
     top: 22px;
     left: 86px;
+  }
+
+  .main-header__logotip {
+    height: 35px;
+    width: 86px;
   }
 
   .main-header__item {
@@ -99,9 +100,11 @@
     position: absolute;
     top: 26px;
     left: 50px;
+  }
+
+  .main-header__logotip {
     height: 46px;
     width: 113px;
-    background: url("../img/tablet/mishka-logo-tablet.svg") center no-repeat;
   }
 
   .main-header__item {
@@ -125,11 +128,13 @@
     position: absolute;
     top: 9px;
     left: 470px;
-    height: 72px;
-    width: 149px;
-    background: url("../img/desktop/mishka-logo-desktop.svg") center no-repeat;
     margin-left: 45px;
     margin-right: 101px;
+  }
+
+  .main-header__logotip {
+    height: 72px;
+    width: 149px;
   }
 
   .main-header__item {
