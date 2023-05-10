@@ -135,7 +135,7 @@
 
 
   .review__slogan {
-    margin-right: 330px;
+    margin-right: 250px;
     display: flex;
     order: 1;
     align-items: center;
@@ -164,7 +164,7 @@
   }
 
   .review__button {
-    padding: 16px 26px;
+    padding: 12px 35px;
   }
 
   .review__arrows {
@@ -172,10 +172,10 @@
     display: flex;
     justify-content: space-between;
     width: 137px;
-    margin-top: -40px;
+    // margin-top: -40px;
     position: absolute;
-    right: 20px;
-    bottom: 80px;
+    right: 50px;
+    bottom: 50px;
   }
 
   .review__arrows__button {
