@@ -23,13 +23,16 @@
   color: #444444;
   position: relative;
   margin-bottom: 41px;
+  margin-top: 0;
 }
 
 .catalog-card__description::after {
   position: absolute;
   top: 17px;
   left: 0;
-  content: url("../img/images-svg/divider-card.svg");
+  width: 204px;
+  height: 1px;
+  content: url("/img/images-svg/divider-card.svg");
 }
 
 .catalog-card__description--additional {
@@ -41,6 +44,8 @@
   flex-direction: row;
   justify-content: space-between;
   margin-right: 27px;
+  align-items: center;
+  margin-bottom: 21px;
 }
 
 .catalog-card__price {
@@ -48,8 +53,8 @@
   font-size: 15px;
   line-height: 24px;
   position: relative;
-  margin-bottom: 26px;
-  margin-top: 0;
+  margin: 0;
+  text-align: center;
 }
 
 .catalog-card__ {
@@ -86,6 +91,15 @@
     width: 334px;
     height: 334px;
   }
+
+  .catalog-card__description {
+    margin-bottom: 192px;
+  }
+
+  .catalog-card__description::after {
+    width: 268px;
+    top: 169px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -98,5 +112,14 @@
   .catalog-card__image {
     width: 316px;
     height: 462px;
+  }
+
+  .catalog-card__description {
+    margin-bottom: 60px;
+  }
+
+  .catalog-card__description::after {
+    width: 255px;
+    top: 36px;
   }
 }

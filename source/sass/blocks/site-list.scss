@@ -85,7 +85,7 @@
   }
 
   .site-list__link--search {
-    padding: 37px 31px 22px 33px;
+    padding: 37px 31px 31px 33px;
     border: 1px solid #e6e6e6;
     order: 1;
   }
@@ -96,7 +96,7 @@
   }
 
   .site-list__item--basket {
-    margin-left: 50px;
+    margin-left: 31px;
     margin-right: 0;
     margin-top: 32px;
     order: 2;
@@ -116,6 +116,7 @@
 
   .site-list__link--basket {
     position: relative;
+    display: flex;
   }
 
   .site-list__text {
@@ -124,6 +125,7 @@
 
   .site-list__text--basket {
     display: block;
+    margin-left: 25px;
   }
 }
 
@@ -137,7 +139,7 @@
   }
 
   .site-list__item--basket {
-    margin-left: 80px;
+    margin-left: 30px;
     margin-right: 2px;
     margin-top: 32px;
     order: 4;

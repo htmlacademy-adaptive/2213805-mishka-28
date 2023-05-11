@@ -73,6 +73,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 64px;
+    align-items: flex-start;
   }
 
   .manufacturing__wrapper {
@@ -87,6 +88,20 @@
 
   .manufacturing__title {
     order: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .manufacturing__slogan {
+    position: relative;
+    display: flex;
+    margin: 41px 13px 26px 107px;
+  }
+
+  .manufacturing__slogan::before {
+    top: 0;
+    left: -55px;
   }
 
   .manufacturing__text {
@@ -109,7 +124,7 @@
   //сделать див и перенести все с секции
   .manufacturing__container {
     display: grid;
-    grid-template-columns: 682px 155px;
+    grid-template-columns: 682px 250px;
     grid-template-rows: 152px 152px 152px;
     column-gap: 79px;
     border: 1px solid #ececec;
@@ -154,5 +169,16 @@
   .manufacturing__button {
     width: 230px;
     padding: 18px 29px;
+  }
+
+  .manufacturing__slogan {
+    position: relative;
+    display: flex;
+    margin: 96px 13px 26px 0;
+  }
+
+  .manufacturing__slogan::before {
+    top: -40px;
+    left: 0;
   }
 }
