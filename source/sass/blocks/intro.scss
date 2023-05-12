@@ -8,13 +8,14 @@
   background-color: #f1f1f1;
   padding-top: 73px;
   padding-bottom: 73px;
+  margin: 0;
 }
 
-// .intro__title--catalog {
-//   background-color: #f1f1f1;
-//   padding-top: 73px;
-//   padding-bottom: 73px;
-// }
+.intro__title--catalog {
+  background-color: #f1f1f1;
+  padding-top: 73px;
+  padding-bottom: 73px;
+}
 
 @media (max-width: $mobile-width-only) {
   .intro::after {
@@ -37,15 +38,15 @@
     content: "";
     height: 24px;
     width: 100%;
-    margin-top: -50px;
+    margin-top: -10px;
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .intro__title {
-//     font-size: 53px;
-//     line-height: 57px;
-//     padding-top: 102px;
-//     padding-bottom: 96px;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .intro__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 102px;
+    padding-bottom: 96px;
+  }
+}

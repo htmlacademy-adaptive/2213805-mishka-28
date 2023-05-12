@@ -1,5 +1,5 @@
 const modalWindow = document.querySelector('.modal');
-const cardOpenButton = document.querySelector('.catalog-card__open');
+const cardOpenButton = document.querySelector('.catalog-card__button');
 const modalOpen = document.querySelector('.modal--open');
 const modalClose = document.querySelector('.modal--close');
 

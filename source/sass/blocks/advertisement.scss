@@ -1,14 +1,13 @@
 .advertisement {
   width: 100%;
-  margin: 0;
-  margin-top: -10px;
+  margin: 0 auto;
+  // margin-top: -10px;
   padding: 0;
 }
 
 .advertisement__slogan {
   justify-content: center;
   align-items: center;
-  // margin: 70px 30px auto 30px;
 }
 
 .advertisement__title {
@@ -29,8 +28,8 @@
   line-height: 24px;
   width: 50%;
   color: #ffffff;
-  margin-left: 30px;
   margin-top: 24px;
+  margin-left: 30px;
 }
 
 .advertisement__features {
@@ -75,16 +74,11 @@
     flex-wrap: wrap;
     flex-direction: column;
     background-color: #f9f9f9;
+    background-position-y: -5px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mobile/hero-mobile@2x.png");
     }
-
-    // .advertisement__name {
-    //   position: absolute;
-    //   top: 24px;
-    //   left: 30px;
-    // }
   }
 
   .advertisement__slogan {
@@ -95,27 +89,34 @@
 
   .advertisement__container {
     flex-direction: column;
-    margin-top: 20px;
+    margin: 150px 0 0 0;
+  }
+
+  .advertisement__container.container {
+    padding: 0;
+    margin-top: 150px;
   }
 
   .advertisement__title {
     font-size: 27px;
     line-height: 30px;
-    margin-bottom: 120px;
-    margin-top: 73px;
+    margin-bottom: -30px;
+    margin-top: 83px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .advertisement {
-    margin-top: -40px;
-  }
+  // .advertisement {
+  //   margin-top: -40px;
+  // }
 
   .advertisement__container {
-    margin: 0 50px -10px 50px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
+    margin-top: 110px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .advertisement__wrapper {
@@ -137,17 +138,19 @@
     content: "";
     height: 24px;
     z-index: 1;
+    margin-top: -10px;
   }
 
   .advertisement__slogan {
     margin-top: 120px;
     margin-right: 52px;
     margin-left: 52px;
-    margin-bottom: 335px;
+    margin-bottom: 365px;
   }
 
-  .advertisement__features {
-    width: 50%;
+  .advertisement__name {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .advertisement__title {
@@ -159,6 +162,10 @@
     & br {
       display: none;
     }
+  }
+
+  .advertisement__features {
+    height: 119px;
   }
 }
 
@@ -179,5 +186,9 @@
     margin-right: 225px;
     margin-left: 225px;
     margin-bottom: 355px;
+  }
+
+  .advertisement__container {
+    margin-top: 50px;
   }
 }

@@ -43,13 +43,22 @@
     margin-bottom: 39px;
   }
 
+  .collaboration__container {
+    justify-content: center;
+  }
+
   .collaboration__details {
     margin: 0;
     padding: 0;
   }
 
   .collaboration__information {
-    margin: 0;
+    margin: 38px 0 55px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
   }
 
   .collaboration__wrapper {
@@ -60,6 +69,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+  }
+
+  .collaboration__info {
+    justify-content: center;
   }
 }
 

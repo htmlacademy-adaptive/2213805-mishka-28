@@ -1,66 +1,76 @@
-.modal--close {
-  display: none;
-}
-
 .modal {
   display: none;
-}
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
 
-.modal__content {
-  min-height: 336px;
-  width: 100%;
-  display: none;
-}
+  min-width: 320px;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 30px;
 
-.modal--open {
-  display: block;
-}
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  box-shadow: 0 5px 10px #63d1bb;
+  transform: translate(-50%,-50%);
 
-.modal-form__list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.modal-form__option {
-  margin-right: 7px;
-  border: 2px solid #444444;
-
-  &:last-child {
-    margin-right: 0;
+  @media (min-width: $tablet-width) {
+    max-width: 566px;
+    padding: 108px;
   }
 }
 
-.modal-form__button {
-  color: #ffffff;
-  background-color: #63d1bb;
-  width: 260px;
-  min-height: 52px;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 16px;
-  text-transform: capitalize;
+.modal__close {
+  display: none;
 }
 
-.modal-form__description {
-  font-family: "OpenSans", "Arial", sans-serif;
+.modal__title {
+  text-align: center;
+  margin: 0 0 14px 0;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.modal__form-group {
+  border: none;
+}
+
+.modal__legend {
+  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
+  color: #444444;
 }
 
-.modal-form__text {
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 16px;
-  text-align: center;
-  justify-content: center;
+.modal__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
-.modal-form__link {
-  display: flex;
-  margin-top: 18px;
-  justify-content: center;
-  align-items: center;
+.modal__submit {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 46px;
+
+  color: #ffffff;
+
+  background-color: #63d1bb;
+  border: none;
+  outline: none;
+
+  @media (min-width: $tablet-width) {
+    max-width: 350px;
+  }
 }
