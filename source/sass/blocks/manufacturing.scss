@@ -73,7 +73,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 64px;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .manufacturing__wrapper {
@@ -83,14 +83,15 @@
   .manufacturing__image {
     width: 668px;
     height: 455px;
-    background-size: cover;
+    display: block;
   }
 
   .manufacturing__title {
     order: 2;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    align-self: start;
   }
 
   .manufacturing__slogan {
@@ -101,7 +102,7 @@
 
   .manufacturing__slogan::before {
     top: 0;
-    left: -55px;
+    left: -70px;
   }
 
   .manufacturing__text {
@@ -110,6 +111,7 @@
 
   .manufacturing__order {
     order: 4;
+    justify-content: center;
   }
 
   .manufacturing__button {
@@ -134,7 +136,7 @@
   .manufacturing__image {
     width: 682px;
     height: 455px;
-    background-size: cover;
+    display: block;
   }
 
   .manufacturing__wrapper {
