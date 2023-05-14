@@ -1,7 +1,7 @@
 .modal {
   // display: none;
   position: fixed;
-  top: 50%;
+  top: 70%;
   left: 50%;
   z-index: 2;
 
@@ -58,7 +58,7 @@
   flex-direction: column;
 }
 
-.modal__form-group {
+.modal__group {
   border: none;
   padding: 0;
 }
