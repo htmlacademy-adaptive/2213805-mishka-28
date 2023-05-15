@@ -97,7 +97,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgba(68, 68, 68, 0.1);
+  // border: 2px solid rgba(68, 68, 68, 0.1);
   margin-right: 7px;
 
   &:last-child {
@@ -107,10 +107,6 @@
   @media (min-width: $tablet-width) {
     height: 52px;
   }
-}
-
-.modal__input:checked ~ .modal__label {
-  border-color: #63d1bb;
 }
 
 .modal__label {
@@ -124,6 +120,10 @@
 .modal__input {
   display: none;
   border-color: rgba(68, 68, 68, 0.1);
+}
+
+.modal__input:checked ~ .modal__label {
+  border-color: #63d1bb;
 }
 
 .modal__submit {
