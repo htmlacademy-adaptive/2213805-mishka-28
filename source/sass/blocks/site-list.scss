@@ -96,21 +96,21 @@
   }
 
   .site-list__item--basket {
-    margin-left: 31px;
+    margin-left: 36px;
     margin-right: 0;
-    margin-top: 32px;
+    margin-top: 34px;
     order: 2;
   }
 
   .site-list__item--catalog {
     order: 3;
-    margin-top: 41px;
-    margin-right: 30px;
+    margin-top: 49px;
+    margin-right: 37px;
   }
 
   .site-list__item--order {
     order: 4;
-    margin-top: 41px;
+    margin-top: 49px;
     margin-right: 30px;
   }
 
@@ -121,6 +121,8 @@
 
   .site-list__text {
     display: none;
+    font-size: 17px;
+    line-height: 24px;
   }
 
   .site-list__text--basket {

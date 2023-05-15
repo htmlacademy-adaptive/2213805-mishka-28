@@ -88,13 +88,12 @@
     flex-wrap: wrap;
     grid-template-columns: none;
     column-gap: 25px;
-    justify-content: center;
   }
 
   .collaboration__wrapper::after {
     position: absolute;
     top: -20px;
-    right: 0;
+    right: -35px;
     content: url("../img/images-svg/flag.svg");
     z-index: 1;
   }
@@ -140,10 +139,10 @@
   }
 
   .collaboration__information {
-    margin: 58px 50px 58px 50px;
+    margin: 68px 50px 48px 50px;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    row-gap: 25px;
+    row-gap: 10px;
   }
 }
 

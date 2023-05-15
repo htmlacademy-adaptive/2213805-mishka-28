@@ -108,7 +108,6 @@
   }
 
   .promotion__link {
-    // margin: 2px 14px;
     padding: 12px 82px;
   }
 
@@ -155,12 +154,20 @@
     font-size: 43px;
     line-height: 50px;
     padding: 0 10px 0 0;
+    margin-top: 40px;
+  }
+
+  .promotion__option {
+    display: flex;
+    justify-content: center;
+    margin-right: 25px;
   }
 
   .promotion__goods {
     font-size: 17px;
     line-height: 17px;
-    padding: 2px 15px;
+    text-align: center;
+    // padding: 2px 15px;
   }
 
   .promotion__slogan {
@@ -188,6 +195,7 @@
   .promotion__product {
     width: 334px;
     height: 404px;
+    display: block;
   }
 
   .promotion__text {
@@ -210,6 +218,7 @@
     color: #444444;
     font-size: 15px;
     line-height: 20px;
+    margin-left: 0;
   }
 
   .promotion__description {
@@ -218,6 +227,7 @@
     color: #444444;
     font-size: 15px;
     line-height: 20px;
+    margin-left: 0;
   }
 
   .promotion__price {
@@ -247,8 +257,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 28px;
-    margin-bottom: 30px;
+    margin-top: 35px;
+    margin-bottom: 40px;
   }
 
   .promotion__wrapper {

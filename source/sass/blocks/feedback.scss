@@ -13,6 +13,12 @@
 @media (min-width: $tablet-width) {
   .feedback {
     margin-bottom: 57px;
+    margin-top: 55px;
+
+    .feedback__button {
+      padding: 14px 33px;
+      text-decoration: none;
+    }
   }
 }
 
