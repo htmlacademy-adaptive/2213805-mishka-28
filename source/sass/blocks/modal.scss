@@ -111,6 +111,7 @@
 
 .modal__label {
   padding: 18px 32px;
+  border-color: rgba(68, 68, 68, 0.1);
 
   @media (min-width: $tablet-width) {
     padding: 18px 47px;
@@ -119,11 +120,11 @@
 
 .modal__input {
   display: none;
-  border-color: rgba(68, 68, 68, 0.1);
+  border: 2px solid rgba(68, 68, 68, 0.1);
 }
 
 .modal__input:checked ~ .modal__label {
-  border-color: #63d1bb;
+  border: 2px solid #63d1bb;
 }
 
 .modal__submit {
