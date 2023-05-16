@@ -25,7 +25,13 @@
 @media (min-width: $desktop-width) {
   .feedback {
     justify-content: flex-start;
-    margin-left: auto;
-    margin-top: -70px;
+    margin-left: 180px;
+    margin-top: -15px;
+    margin-bottom: 110px;
+  }
+
+  .feedback__button {
+    padding: 18px 45px;
+    text-decoration: none;
   }
 }

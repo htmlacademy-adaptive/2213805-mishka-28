@@ -150,28 +150,37 @@
   .collaboration__container {
     display: grid;
     grid-template-columns: 527px 527px;
-    column-gap: 25px;
+    column-gap: 45px;
   }
 
   .collaboration__information {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 174px;
+    margin-left: 225px;
   }
 
   .collaboration__wrapper::after {
     position: absolute;
     top: -20px;
-    left: -100px;
+    left: -110px;
     content: url("../img/images-svg/flag.svg");
   }
 
+  .collaboration__contacts {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 25px;
+  }
+
+  .collaboration__information {
+    margin: 115px 30px 48px 225px;
+  }
 
   .collaboration__info {
     display: grid;
     grid-template-rows: min-content min-content;
-    row-gap: 20px;
+    row-gap: 28px;
     grid-template-columns: none;
   }
 
