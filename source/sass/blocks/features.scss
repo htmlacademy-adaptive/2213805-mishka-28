@@ -82,15 +82,17 @@
     font-weight: 700;
     font-size: 43px;
     line-height: 50px;
+    margin-top: 55px;
   }
 
   .features__list {
-    // display: flex;
-    // flex-wrap: wrap;
-    // flex-direction: row;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 70px;
+    column-gap: 5px;
+  }
+
+  .features__item {
+    margin-top: 98px;
   }
 
   .features__description {
@@ -101,42 +103,45 @@
 
   .features__item--scandy {
     order: 3;
+    margin-top: 110px;
   }
 
   .features__item--likes {
     order: 5;
+    margin-top: 110px;
   }
 
   .features__item--support {
     order: 4;
+    margin-top: 110px;
   }
 
   .features__item--package {
     order: 6;
+    margin-top: 110px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  // .features {
-  //   margin: 68px 225px 90px;
-  // }
-
   .features__title {
     font-weight: 700;
     font-size: 53px;
     line-height: 57px;
+    margin-top: 70px;
   }
 
   .features__list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 265px 325px;
     width: 785px;
     margin-left: auto;
     margin-right: auto;
     column-gap: 85px;
+    margin-left: 175px;
+    margin-right: 175px;
   }
 
   .features__slogan {
-    margin-left: 225px;
+    margin-left: 175px;
   }
 }

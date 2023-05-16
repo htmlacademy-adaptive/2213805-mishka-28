@@ -1,26 +1,37 @@
 .feedback {
-  margin-top: 30px;
+  margin-top: 36px;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
 .feedback__button {
-  margin: 2px 14px;
-  padding: 16px 35px;
+  padding: 14px 49px;
   text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
     margin-bottom: 57px;
+    margin-top: 55px;
+
+    .feedback__button {
+      padding: 14px 33px;
+      text-decoration: none;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback {
     justify-content: flex-start;
-    margin-left: auto;
-    margin-top: -70px;
+    margin-left: 180px;
+    margin-top: -15px;
+    margin-bottom: 110px;
+  }
+
+  .feedback__button {
+    padding: 18px 45px;
+    text-decoration: none;
   }
 }

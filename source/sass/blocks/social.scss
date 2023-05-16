@@ -1,5 +1,5 @@
 .social__list {
-  padding-top: 25px;
+  padding-top: 28px;
   padding-bottom: 28px;
   display: flex;
   flex-wrap: nowrap;
@@ -26,15 +26,16 @@
     padding: 0;
     border: none;
     align-items: center;
+    padding-top: 8px;
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .social__item {
-//     margin-right: 29px;
+@media (min-width: $desktop-width) {
+  .social__item {
+    margin-right: 29px;
 
-//     &:last-child {
-//       margin-bottom: 0;
-//     }
-//   }
-// }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
