@@ -11,6 +11,16 @@
 
 .catalog-card__title {
   text-decoration: none;
+  position: relative;
+}
+
+.catalog-card__price::before {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 204px;
+  height: 1px;
+  content: url("/img/images-svg/divider-card.svg");
 }
 
 .catalog-card__item {
@@ -24,18 +34,8 @@
   font-size: 13px;
   line-height: 30px;
   color: #444444;
-  position: relative;
   margin-bottom: 41px;
   margin-top: 0;
-}
-
-.catalog-card__description::after {
-  position: absolute;
-  top: 27px;
-  left: 0;
-  width: 204px;
-  height: 1px;
-  content: url("/img/images-svg/divider-card.svg");
 }
 
 .catalog-card__description--additional {
@@ -60,12 +60,13 @@
   text-align: center;
 }
 
-.catalog-card__ {
-  background-image: url("../img/images-svg/basket-img.svg");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 19px;
-}
+// .catalog-card__price::after {
+//   background-image: url("../img/images-svg/basket-img.svg");
+//   background-repeat: no-repeat;
+//   width: 20px;
+//   height: 19px;
+//   position: absolute;
+// }
 
 .catalog-card__button {
   font-weight: 700;
@@ -105,13 +106,6 @@
     padding: 0;
   }
 
-  .catalog-card__description::after {
-    width: 268px;
-    top: 169px;
-    height: 1px;
-    content: url("/img/tablet/divider-tablet.svg");
-  }
-
   .catalog-card__name {
     font-size: 20px;
     margin: 0;
@@ -131,6 +125,16 @@
     line-height: 24px;
     margin: 0;
     padding: 0;
+    position: relative;
+  }
+
+  .catalog-card__price::before {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 268px;
+    height: 1px;
+    content: url("/img/tablet/divider-tablet.svg");
   }
 
   .catalog-card__wrapper {
@@ -159,17 +163,22 @@
     margin-bottom: 60px;
   }
 
-  .catalog-card__description::after {
-    width: 255px;
-    top: 36px;
-  }
-
   .catalog-card__item {
-    grid-template-rows: 57px 72px 72px;
+    grid-template-rows: 57px 72px 65px;
     margin-left: 27px;
   }
 
   .catalog-card__name {
     padding-right: 50px;
+    margin: 26px 0 0;
+  }
+
+  .catalog-card__price::before {
+    width: 255px;
+    top: -40px;
+  }
+
+  .catalog-card__wrapper {
+    margin-bottom: 10px;
   }
 }

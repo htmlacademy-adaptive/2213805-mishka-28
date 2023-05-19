@@ -376,7 +376,6 @@
 }
 
 .form__field {
-  flex-grow: 1;
   width: 260px;
   height: 52px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -389,6 +388,43 @@
   padding-bottom: 17px;
   border-bottom: 2px solid #444444;
   outline: none;
+}
+
+
+.form__field--name {
+  @media (min-width: $tablet-width) {
+    width: 428px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 626px;
+  }
+}
+
+.form__field--middle {
+  @media (min-width: $tablet-width) {
+    width: 375px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 573px;
+  }
+}
+
+.form__field--phone {
+  @media (min-width: $tablet-width) {
+    width: 501px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
+
+.form__field--email {
+  @media (min-width: $tablet-width) {
+    width: 501px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
 }
 
 .form__textarea {
