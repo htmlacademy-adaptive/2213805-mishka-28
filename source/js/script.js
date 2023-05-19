@@ -21,7 +21,7 @@ navToggle.addEventListener('click', function () {
 
 const modalWindow = document.querySelector('.modal');
 if (modalWindow) {
-  const cardOpenButton = document.querySelector('.button--modal--open');
+  const cardOpenButton = document.querySelector('.button-modal-open');
 
   cardOpenButton.addEventListener('click', function () {
     modalWindow.classList.remove('modal--close');
