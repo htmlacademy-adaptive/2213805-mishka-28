@@ -10,7 +10,7 @@
   font-weight: 700;
 }
 
-.review-upload__text {
+.review__upload-text {
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -20,7 +20,7 @@
   padding-right: 0;
 }
 
-.review-upload__name {
+.review__upload-name {
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -29,7 +29,7 @@
   margin-bottom: 5px;
 }
 
-.review-upload__email {
+.review__upload-email {
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 17px;
@@ -74,7 +74,7 @@
     padding: 14px 78px;
   }
 
-  .review-upload {
+  .review__upload {
     margin-bottom: 0;
     order: 2;
   }
@@ -164,7 +164,7 @@
     margin: 92px 0 38px 0;
   }
 
-  .review-upload {
+  .review__upload {
     order: 3;
 
     & br {
@@ -172,12 +172,12 @@
     }
   }
 
-  .review-upload__text {
+  .review__upload-text {
     font-size: 17px;
     padding-right: 0;
   }
 
-  .review-upload__name {
+  .review__upload-name {
     margin-top: 62px;
     font-size: 18px;
     line-height: 24px;
@@ -220,7 +220,7 @@
     margin-left: 175px;
   }
 
-  .review-upload__text {
+  .review__upload-text {
     font-family: "OpenSans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 17px;
@@ -230,7 +230,7 @@
     padding-right: 70px;
   }
 
-  .review-upload__name {
+  .review__upload-name {
     margin-left: 174px;
     margin-top: 45px;
     font-weight: 700;
@@ -238,7 +238,7 @@
     line-height: 24px;
   }
 
-  .review-upload__email {
+  .review__upload-email {
     margin-left: 174px;
     margin-bottom: 60px;
     font-weight: 700;
