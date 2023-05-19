@@ -208,10 +208,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .review::after {
-    height: 23px;
-  }
-
   .review__title {
     font-family: "OpenSans", "Arial", sans-serif;
     font-weight: 700;
@@ -268,6 +264,7 @@
 
   .review::after {
     margin-top: 0;
+    height: 23px;
   }
 
   .review__container {

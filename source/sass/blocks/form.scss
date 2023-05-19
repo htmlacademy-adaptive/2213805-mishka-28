@@ -130,12 +130,6 @@
 .form__group-list--type {
   margin-top: 32px;
   margin-bottom: 39px;
-
-  @media (min-width: $tablet-width) {
-  }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 .form__group-list--checkbox {
@@ -378,6 +372,7 @@
   @media (min-width: $tablet-width) {
     width: 375px;
   }
+
   @media (min-width: $desktop-width) {
     width: 573px;
   }
@@ -387,6 +382,7 @@
   @media (min-width: $tablet-width) {
     width: 501px;
   }
+
   @media (min-width: $desktop-width) {
     width: 700px;
   }
@@ -396,6 +392,7 @@
   @media (min-width: $tablet-width) {
     width: 501px;
   }
+
   @media (min-width: $desktop-width) {
     width: 700px;
   }
