@@ -18,15 +18,11 @@
   flex-direction: column;
   justify-content: center;
   width: 320px;
-  margin: 0 auto;
+  margin: auto;
   padding: 30px;
   border: 1px solid #cdcdcd;
   background-color: #ffffff;
   box-shadow: 0 5px 10px #c6c6c6;
-  transform: translate (-50%, -50%);
-  position: fixed;
-  top: 70%;
-  left: 50%;
 
   @media (min-width: $tablet-width) {
     width: 566px;
