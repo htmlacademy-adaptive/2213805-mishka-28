@@ -35,6 +35,7 @@
   line-height: 24px;
   color: #444444;
   margin-bottom: 41px;
+  margin-top: 28px;
 }
 
 .manufacturing__text {
@@ -46,7 +47,7 @@
 }
 
 .manufacturing__button {
-  padding: 18px 11px;
+  padding: 14px 11px;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -59,6 +60,7 @@
   .manufacturing__container {
     display: block;
     margin-bottom: 58px;
+    margin-top: 38px;
   }
 
   .manufacturing__order {
@@ -89,15 +91,15 @@
   .manufacturing__title {
     order: 2;
     display: flex;
-    // justify-content: flex-start;
-    // align-items: flex-start;
     align-self: start;
   }
 
   .manufacturing__slogan {
     position: relative;
     display: flex;
-    margin: 41px 13px 26px 107px;
+    margin: 41px 13px 0 107px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .manufacturing__slogan::before {
@@ -107,6 +109,15 @@
 
   .manufacturing__text {
     order: 3;
+    margin-left: 38px;
+  }
+
+  .manufacturing__description {
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 23px;
+    padding-right: 40px;
+    margin-bottom: 40px;
   }
 
   .manufacturing__order {
@@ -115,7 +126,7 @@
   }
 
   .manufacturing__button {
-    padding: 18px 207px;
+    padding: 15px 207px;
     width: 584px;
     min-height: 52px;
     margin-bottom: 46px;
@@ -170,17 +181,23 @@
 
   .manufacturing__button {
     width: 230px;
-    padding: 18px 29px;
+    padding: 16px 30px;
+    margin-top: 25px;
   }
 
   .manufacturing__slogan {
     position: relative;
     display: flex;
-    margin: 96px 13px 26px 0;
+    margin: 97px 13px 26px 0;
   }
 
   .manufacturing__slogan::before {
-    top: -40px;
+    top: -50px;
     left: 0;
+  }
+
+  .manufacturing__description {
+    margin-top: 45px;
+    padding-right: 20px;
   }
 }

@@ -76,7 +76,7 @@
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__wrapper form__wrapper--type">
             <fieldset class="form__group form__group--radiobutton container">
-              <legend class="form__title">тип</legend>
+              <legend class="form__title form__title--type">тип</legend>
               <ul class="form__group-list form__group-list--type">
                 <li class="form__radiobutton">
                   <label class="form__label-radiobutton" for="accessory">
@@ -97,7 +97,7 @@
           </div>
           <div class="form__wrapper form__wrapper--colors">
             <fieldset class="form__group form__group--checkbox container">
-              <legend class="form__title">Цвет</legend>
+              <legend class="form__title form__title--colors">Цвет</legend>
               <ul class="form__group-list form__group-list--checkbox">
                 <li class="form__checkbox">
                   <label class="form__label-checkbox">
@@ -148,19 +148,19 @@
 
           <div class="form__wrapper form__wrapper--details">
             <fieldset class="form__group form__group--details container">
-              <legend class="form__title">Фио</legend>
+              <legend class="form__title form__title--details">Фио</legend>
               <ul class="form__group-list form__group-list--details">
                 <li class="form__input form__input--data">
                   <label class="form__label" for="name">Имя:</label>
-                  <input class="form__field" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+                  <input class="form__field form__field--name" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
                 </li>
                 <li class="form__input form__input--data">
                   <label class="form__label" for="surname">Фамилия:</label>
-                  <input class="form__field" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+                  <input class="form__field form__field--middle" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
                 </li>
                 <li class="form__input form__input--data">
                   <label class="form__label" for="middle__name">Отчество:</label>
-                  <input class="form__field" type="text" name="middle__name" id="middle__name" placeholder="Отчество, если желаете">
+                  <input class="form__field form__field--middle" type="text" name="middle__name" id="middle__name" placeholder="Отчество, если желаете">
                 </li>
               </ul>
             </fieldset>
@@ -169,20 +169,28 @@
           <div class="form__contacts">
             <div class="form__wrapper form__wrapper--data">
               <fieldset class="form__group form__group--phone container">
-                <legend class="form__title">Тел</legend>
+                <legend class="form__title form__title--phone">Тел</legend>
                   <div class="form__input form__input--phone">
                     <label class="form__label visually-hidden" for="phone">Телефон:<sup>*</sup></label>
                     <input class="form__field form__field--phone" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                    <span class="visually-hidden">Наш телефон.</span>
+                    <svg class="form__icon form__icon--phone" width="25" height="24">
+                      <use xlink:href="img/sprite.svg#phone-icon"></use>
+                    </svg>
                   </div>
               </fieldset>
             </div>
 
             <div class="form__wrapper form__wrapper--data">
               <fieldset class="form__group form__group--email container">
-                <legend class="form__title">E-mail</legend>
+                <legend class="form__title form__title--email">E-mail</legend>
                     <div class="form__input form__input--email">
                       <label class="form__label visually-hidden" for="email">e-mail:</label>
                       <input class="form__field form__field--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+                      <span class="visually-hidden">Наш имейл.</span>
+                      <svg class="form__icon form__icon--email" width="32" height="21">
+                        <use xlink:href="img/sprite.svg#mail-icon"></use>
+                      </svg>
                     </div>
               </fieldset>
             </div>
@@ -190,7 +198,7 @@
 
           <div class="form__wrapper form__wrapper--additional">
             <fieldset class="form__group form__group--add container">
-              <legend class="form__title">Доп</legend>
+              <legend class="form__title form__title--add">Доп</legend>
               <div class="form__input form__input--additional">
                 <label class="form__label" for="info-order"></label>
                 <textarea class="form__textarea" name="info-order" id="info-order" placeholder="Опишите все ваши пожелания к заказу"></textarea>

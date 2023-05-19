@@ -24,6 +24,7 @@
   justify-content: flex-start;
   align-items: center;
   color: #444444;
+  align-self: center;
 }
 
 .collaboration__link {
@@ -123,6 +124,7 @@
     color: #444444;
     margin: 0;
     padding: 0;
+    align-self: flex-start;
   }
 
   .collaboration__info {
@@ -150,7 +152,7 @@
   .collaboration__container {
     display: grid;
     grid-template-columns: 527px 527px;
-    column-gap: 45px;
+    column-gap: 60px;
   }
 
   .collaboration__information {
@@ -158,6 +160,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-left: 225px;
+    margin: 87px 0 18px 237px;
   }
 
   .collaboration__wrapper::after {
@@ -171,10 +174,6 @@
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 25px;
-  }
-
-  .collaboration__information {
-    margin: 115px 30px 48px 225px;
   }
 
   .collaboration__info {
@@ -198,6 +197,10 @@
     flex-direction: column;
     order: 1;
     margin-top: 71px;
+  }
+
+  .collaboration__description {
+    align-self: flex-start;
   }
 
   .collaboration__description br {

@@ -17,6 +17,7 @@
   line-height: 30px;
   color: #444444;
   margin: 0;
+  padding-right: 0;
 }
 
 .review-upload__name {
@@ -121,7 +122,6 @@
     background-image: url("../img/tablet/review-bg.png");
     background-repeat: no-repeat;
     background-position: left top;
-    background-size: contain;
     position: relative;
     padding-bottom: 68px;
     justify-content: space-between;
@@ -174,6 +174,7 @@
 
   .review-upload__text {
     font-size: 17px;
+    padding-right: 0;
   }
 
   .review-upload__name {
@@ -207,16 +208,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .review::after {
-    height: 23px;
-  }
-
   .review__title {
     font-family: "OpenSans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 53px;
     line-height: 57px;
-    margin: 82px 0 35px;
+    margin: 85px 0 35px;
   }
 
   .review__slogan {
@@ -230,14 +227,15 @@
     line-height: 30px;
     color: #444444;
     margin-left: 175px;
+    padding-right: 70px;
   }
 
   .review-upload__name {
     margin-left: 174px;
-    margin-top: 10px;
-    font-weight: 400;
+    margin-top: 45px;
+    font-weight: 700;
     font-size: 17px;
-    line-height: 30px;
+    line-height: 24px;
   }
 
   .review-upload__email {
@@ -249,24 +247,28 @@
   }
 
   .review__write {
-    margin: 96px 0 35px 0;
+    margin: 100px 0 35px 0;
   }
 
   .review__button {
-    padding: 11px 32px;
+    padding: 13px 38px;
   }
 
   .review__arrows {
     display: flex;
     justify-content: space-between;
     width: 137px;
-    // margin-top: -40px;
-    // margin-left: 800px;
     right: 69px;
-    bottom: 140px;
+    bottom: 112px;
   }
 
   .review::after {
     margin-top: 0;
+    height: 23px;
+  }
+
+  .review__container {
+    margin-bottom: 60px;
+    padding-bottom: 40px;
   }
 }
