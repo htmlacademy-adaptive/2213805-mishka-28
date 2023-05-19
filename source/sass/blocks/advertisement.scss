@@ -87,7 +87,7 @@
 
   .advertisement__container {
     flex-direction: column;
-    margin: 150px 0 0 0;
+    margin-top: 150px;
   }
 
   .advertisement__container.container {
@@ -104,17 +104,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  // .advertisement {
-  //   margin-top: -40px;
-  // }
+  .advertisement__features--light::before {
+    top: 30px;
+  }
+
+  .advertisement__features--dark::before {
+    top: 30px;
+    right: 35px;
+  }
 
   .advertisement__container {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     margin-top: 110px;
-    margin-left: 50px;
-    margin-right: 50px;
   }
 
   .advertisement__wrapper {
@@ -142,9 +145,9 @@
 
   .advertisement__slogan {
     margin-top: 120px;
-    margin-right: 52px;
-    margin-left: 52px;
-    margin-bottom: 335px;
+    // margin-right: 52px;
+    // margin-left: 52px;
+    margin-bottom: 225px;
   }
 
   .advertisement__name {
@@ -156,8 +159,6 @@
   }
 
   .advertisement__title {
-    font-family: "OpenSans", "Arial", sans-serif;
-    font-weight: 700;
     font-size: 43px;
     line-height: 50px;
     margin-top: 35px;
@@ -186,8 +187,8 @@
 
   .advertisement__slogan {
     margin-top: 158px;
-    margin-right: 225px;
-    margin-left: 225px;
+    // margin-right: 225px;
+    // margin-left: 225px;
     margin-bottom: 310px;
   }
 
@@ -197,5 +198,12 @@
 
   .advertisement__name {
     padding-right: 90px;
+  }
+
+  .advertisement__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 150px;
+    padding-right: 150px;
   }
 }

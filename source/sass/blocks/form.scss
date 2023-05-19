@@ -1,13 +1,6 @@
 .form {
   display: flex;
   flex-direction: column;
-  // margin: 17px 0 25px 0;
-
-  @media (min-width: $tablet-width) {
-  }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 .form__group {
@@ -16,12 +9,6 @@
   position: relative;
   list-style-type: none;
   border-top: 1px solid #62d1ba;
-
-  @media (min-width: $tablet-width) {
-  }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 .form__text {
@@ -197,7 +184,7 @@
 }
 
 .form__input--additional {
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .form__input--name {
@@ -210,7 +197,7 @@
 
 .form__wrapper--data {
   margin-top: 42px;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -244,28 +231,15 @@
   right: 20px;
 }
 
-// .form__field--phone::after {
-//   display: block;
-//   background-image: url("/img/images-svg/phone.svg");
-//   background-repeat: no-repeat;
-//   background-position: center right;
-//   background-size: cover;
-//   width: 22px;
-//   height: 21px;
-//   content: "";
-//   z-index: 2;
-// }
+.form__icon--phone {
+  top: 24px;
+  right: 35px;
+}
 
-// .form__field--email::after {
-//   display: block;
-//   background-image: url("../img/images-svg/mail.svg");
-//   background-repeat: no-repeat;
-//   background-position: center right;
-//   background-size: cover;
-//   width: 22px;
-//   height: 21px;
-//   content: "";
-// }
+.form__icon--email {
+  top: 30px;
+  right: 33px;
+}
 
 .form__checkbox {
   margin-top: 23px;
@@ -447,7 +421,7 @@
   font-size: 14px;
   line-height: 16px;
   color: #444444;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .form__button {
@@ -477,7 +451,7 @@
   }
 
   .form__group-list {
-    margin: 0 80px 40px 170px;
+    margin: 0 40px 40px 170px;
   }
 
   .form__wrapper {
@@ -505,7 +479,7 @@
     font-size: 19px;
     line-height: 18px;
     font-weight: 400;
-    padding-left: 15px;
+    padding-left: 18px;
   }
 
   .form__input--data {
@@ -516,7 +490,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 90px;
-    margin: 0 80px 65px 170px;
+    margin: 0 60px 40px 170px;
     // margin-top: 18px;
   }
 
@@ -527,7 +501,7 @@
 
   .form__wrapper--details {
     display: grid;
-    padding-top: 20px;
+    padding-top: 45px;
 
     .form__input {
       flex-direction: row;
@@ -540,7 +514,7 @@
     .form__label {
       text-align: center;
       margin-top: 15px;
-      margin-right: 37px;
+      margin-right: 25px;
     }
   }
 
@@ -560,6 +534,16 @@
   .form__field--phone {
     background-color: #f1f1f1;
     position: relative;
+  }
+
+  .form__icon--phone {
+    top: 70px;
+    right: 75px;
+  }
+
+  .form__icon--email {
+    top: 18px;
+    right: 72px;
   }
 
   .form__wrapper--data .form__title {
@@ -587,11 +571,14 @@
   }
 
   .form__input--additional {
-    margin: 44px 50px 53px 165px;
+    margin: 44px 0 50px 165px;
   }
 
   .form__textarea {
     width: 501px;
+    font-size: 19px;
+    line-height: 18px;
+    padding-top: 15px;
   }
 
   .form__input {
@@ -612,7 +599,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
   }
 
   .form__contacts {
@@ -671,12 +658,16 @@
     }
   }
 
+  .form__wrapper--details {
+    padding-top: 20px;
+  }
+
   .form__input--phone {
-    margin-left: 190px;
+    margin-left: 175px;
   }
 
   .form__input--email {
-    margin-left: 190px;
+    margin-left: 170px;
   }
 
   .form__group--phone .form__title {
@@ -723,5 +714,79 @@
 
   .form__checkbox {
     margin-top: 0;
+  }
+
+  .form__icon--phone {
+    top: 70px;
+    right: 235px;
+  }
+
+  .form__icon--email {
+    top: 18px;
+    right: 230px;
+  }
+
+  .form__send {
+    margin-bottom: 47px;
+  }
+}
+
+.form__title--colors {
+  @media (min-width: $tablet-width) {
+    top: 45px;
+    left: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 17px;
+    left: 80px;
+  }
+}
+
+.form__title--details {
+  @media (min-width: $tablet-width) {
+    top: 45px;
+    left: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 47px;
+    left: 80px;
+  }
+}
+
+.form__title--phone {
+  @media (min-width: $tablet-width) {
+    top: 75px;
+    left: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 80px;
+    left: 80px;
+  }
+}
+
+.form__title--email {
+  @media (min-width: $tablet-width) {
+    top: 18px;
+    left: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
+    left: 80px;
+  }
+}
+
+.form__title--add {
+  @media (min-width: $tablet-width) {
+    top: 62px;
+    left: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 67px;
+    left: 80px;
   }
 }

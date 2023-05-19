@@ -20,20 +20,13 @@ navToggle.addEventListener('click', function () {
 
 
 const modalWindow = document.querySelector('.modal');
-const cardOpenButton = document.querySelector('.catalog-card__button');
-const modalOpen = document.querySelector('.modal--open');
-const modalClose = document.querySelector('.modal--close');
+if (modalWindow) {
+  const cardOpenButton = document.querySelector('.button--modal--open');
 
-modalWindow.classList.remove('modal--close');
-modalWindow.classList.add('modal--open');
-
-cardOpenButton.addEventListener('click', function () {
-  modalOpen.classList.add('modal--open');
-  if (document.classList.contains('modal--close')) {
+  cardOpenButton.addEventListener('click', function () {
     modalWindow.classList.remove('modal--close');
-    modalWindow.classList.add('modal--open');
-  } else {
-    modalWindow.classList.add('modal--close');
-    modalWindow.classList.remove('modal--open');
-  }
-});
+    modalWindow.addEventListener('click', function() {
+      modalWindow.classList.add('modal--close');
+    });
+  });
+}
